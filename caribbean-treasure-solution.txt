@@ -1,0 +1,95 @@
+Caribbean Treasure
+By Garry Francis
+For Z-code interpreters
+
+Solution by Garry Francis
+----------------------------------------
+This is a minimal solution. You'll need to EXAMINE lots of things for this solution to make sense. Some optional (but significant) commands are shown in parentheses. These can be omitted once you know what to do.
+
+W
+U
+D
+X CABIN (you find a pair of glasses)
+GET GLASSES
+(WEAR THEM) (the lenses are like magnifying glasses, so you take them off)
+U
+JUMP
+E
+S
+LOOK UNDER PLANK (you find a hook)
+GET HOOK
+E
+(X ANCHOR) (it's half submerged in the sand, you wonder if you could dig it out)
+DIG ANCHOR (or SEARCH ANCHOR) (you find a rope)
+GET ROPE
+TIE IT TO HOOK (now it looks like a grappling hook)
+W
+N
+N
+N
+E
+U
+GET STONE
+D
+W
+S
+E
+THROW ROPE OVER PALISADE
+U
+E
+(X CHEST) (it's closed)
+OPEN CHEST (it's locked by a heavy padlock)
+(X PADLOCK) (it's rusty)
+BREAK PADLOCK WITH STONE (it snaps and falls to the ground)
+(DROP STONE)
+OPEN CHEST (you find an old lantern)
+GET LANTERN
+W
+U
+W
+S
+S
+E
+(E) (it's pitch dark)
+(W)
+LIGHT LANTERN WITH GLASSES
+(DROP GLASSES)
+E
+(X PIRATE) (he's wearing pirate's clothes)
+GET CLOTHES
+(WEAR CLOTHES) (you have no reason to wear a dead pirate's clothes)
+Z (repeat until water raises you to ceiling, don't panic, you won't drown)
+(X CEILING) (you see a cavity)
+REACH INTO CAVITY (a parchment falls out)
+(GET PARCHMENT)
+(X IT) (it looks like a treasure map, maybe you should read it)
+READ PARCHMENT ('X' marks the spot)
+Z (repeat until water goes down)
+W
+W
+N
+N
+N
+N
+E
+N
+(X MAN) (he looks like a castaway)
+(TALK TO MAN)
+(ASK MAN ABOUT CASTAWAY, FIREPIT, FLIPPERS, GHOSTS, HIMSELF, KNIFE, ME, PIRATES, SCUBA GEAR, SHIPWRECK, TREASURE)
+WEAR CLOTHES (the castaway is frightened by your appearance and runs away)
+DROP LANTERN
+GET SCUBA
+WEAR IT
+GET FLIPPERS (you can't walk around while wearing them)
+S
+W
+S
+E
+U
+U
+WEAR FLIPPERS
+JUMP
+D
+IN
+GET TREASURE
+***THE END***

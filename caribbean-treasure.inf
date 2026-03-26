@@ -1,0 +1,2824 @@
+!% -~S
+!% $OMIT_UNUSED_ROUTINES=1
+!% $ZCODE_COMPACT_GLOBALS=1
+!% $ZCODE_LESS_DICT_DATA=1
+!% $ZCODE_MAX_INLINE_STRING=9999
+!% $MAX_ABBREVS=96
+!========================================
+! Caribbean Treasure
+! Alan Simmons series #1 of 1
+! Copyright © 2025 Garry Francis
+!========================================
+!Constant DEBUG;
+
+Abbreviate " to the east";                  !    12x12, saved   108
+Abbreviate " looks like ";                  !    12x12, saved   108
+Abbreviate "You can't ";                    !    35x12, saved   338
+Abbreviate " from the ";                    !    23x10, saved   172
+Abbreviate " into the ";                    !    17x10, saved   124
+Abbreviate "vegetation";                    !    23x10, saved   172
+Abbreviate "direction";                     !    12x 9, saved    75
+Abbreviate " the rope";                     !    12x 9, saved    75
+Abbreviate "tropical ";                     !    13x 9, saved    82
+Abbreviate " you're ";                      !    16x 9, saved   103
+Abbreviate "There's ";                      !    16x10, saved   116
+Abbreviate "nothing ";                      !    25x 8, saved   141
+Abbreviate " in the ";                      !    31x 8, saved   177
+Abbreviate " of the ";                      !    58x 8, saved   339
+Abbreviate "treasure";                      !    13x 8, saved    69
+Abbreviate " to the ";                      !    61x 8, saved   357
+Abbreviate " on the ";                      !    27x 8, saved   153
+Abbreviate "already ";                      !    17x 8, saved    93
+Abbreviate " at the ";                      !    19x 8, saved   105
+Abbreviate "palisade";                      !    14x 8, saved    75
+Abbreviate "ou can ";                       !    37x 7, saved   176
+Abbreviate "lantern";                       !     9x 7, saved    36
+Abbreviate "current";                       !    12x 7, saved    51
+Abbreviate " around";                       !    18x 7, saved    81
+Abbreviate " your ";                        !    51x 6, saved   198
+Abbreviate "script";                        !    18x 6, saved    66
+Abbreviate "pirate";                        !    19x 6, saved    70
+Abbreviate "island";                        !    27x 6, saved   102
+Abbreviate " you ";                         !   117x 5, saved   345
+Abbreviate "yacht";                         !    18x 5, saved    48
+Abbreviate "ocean";                         !    28x 5, saved    78
+Abbreviate " and ";                         !    97x 5, saved   285
+Abbreviate "light";                         !    33x 5, saved    93
+Abbreviate " that";                         !    79x 5, saved   231
+Abbreviate "south";                         !    25x 5, saved    69
+Abbreviate "cliff";                         !    23x 5, saved    63
+Abbreviate "water";                         !    49x 5, saved   141
+Abbreviate "north";                         !    18x 5, saved    48
+Abbreviate " the ";                         !   216x 5, saved   642
+Abbreviate ", but";                         !    35x 6, saved   134
+Abbreviate "ould ";                         !    22x 5, saved    60
+Abbreviate "thing";                         !    48x 5, saved   138
+Abbreviate "It's ";                         !    44x 7, saved   211
+Abbreviate "climb";                         !    19x 5, saved    51
+Abbreviate "tion";                          !    34x 4, saved    62
+Abbreviate " is ";                          !    64x 4, saved   122
+Abbreviate " to ";                          !   148x 4, saved   290
+Abbreviate " of ";                          !    86x 4, saved   166
+Abbreviate "n't ";                          !    74x 5, saved   216
+Abbreviate "ing ";                          !   103x 4, saved   200
+Abbreviate "You ";                          !    94x 5, saved   276
+Abbreviate " you";                          !    32x 4, saved    58
+Abbreviate "You'";                          !    48x 6, saved   186
+Abbreviate " or ";                          !    25x 4, saved    44
+Abbreviate "The ";                          !    77x 5, saved   225
+Abbreviate "rock";                          !    33x 4, saved    60
+Abbreviate "some";                          !    23x 4, saved    40
+Abbreviate "_to/";                          !    12x 6, saved    42
+Abbreviate "able";                          !    26x 4, saved    46
+Abbreviate "with";                          !    27x 4, saved    48
+Abbreviate "here";                          !    58x 4, saved   110
+Abbreviate "side";                          !    31x 4, saved    56
+Abbreviate " it ";                          !    49x 4, saved    92
+Abbreviate "his ";                          !    33x 4, saved    60
+Abbreviate "not ";                          !    30x 4, saved    54
+Abbreviate "each";                          !    37x 4, saved    68
+Abbreviate "ed.";                           !    35x 4, saved    64
+Abbreviate "ed ";                           !    58x 3, saved    55
+Abbreviate " wh";                           !    51x 3, saved    48
+Abbreviate " be";                           !    52x 3, saved    49
+Abbreviate "ver";                           !    73x 3, saved    70
+Abbreviate ".^^";                           !    22x 6, saved    82
+Abbreviate "ain";                           !    45x 3, saved    42
+Abbreviate "The";                           !    27x 4, saved    48
+Abbreviate " co";                           !    53x 3, saved    50
+Abbreviate "'s ";                           !    49x 4, saved    92
+Abbreviate "for";                           !    49x 3, saved    46
+Abbreviate "en ";                           !    57x 3, saved    54
+Abbreviate "the";                           !    63x 3, saved    60
+Abbreviate "ing";                           !    81x 3, saved    78
+Abbreviate "ook";                           !    51x 3, saved    48
+Abbreviate "re ";                           !    96x 3, saved    93
+Abbreviate "out";                           !    47x 3, saved    44
+Abbreviate "ll ";                           !    66x 3, saved    63
+Abbreviate "st.";                           !    29x 4, saved    52
+Abbreviate "ear";                           !    61x 3, saved    58
+Abbreviate " in";                           !    74x 3, saved    71
+Abbreviate " a ";                           !    92x 3, saved    89
+Abbreviate "ent";                           !    55x 3, saved    52
+Abbreviate "and";                           !    90x 3, saved    87
+Abbreviate "ly ";                           !    58x 3, saved    55
+Abbreviate "ave";                           !    93x 3, saved    90
+Abbreviate ". ";                            !   164x 3, saved   161
+Abbreviate "s.";                            !    49x 3, saved    46
+Abbreviate "e.";                            !    57x 3, saved    54
+Abbreviate ", ";                            !   128x 3, saved   125
+
+Constant Story "Caribbean Treasure";
+Constant Headline "^Copyright (c) 2025 Garry Francis^https://bdb-project.itch.io^Type ABOUT for further info and credits.^^";
+
+Array UUID_ARRAY string "UUID://e2195f71-8171-42e4-a0b4-30c7d69a7a82//";
+#Ifdef UUID_ARRAY;
+#Endif;
+
+Release 1;
+Serial "251009";
+
+!Inform 6 constants
+Constant DEATH_MENTION_UNDO;
+Constant MAX_CARRIED = 10;
+Constant NO_SCORE;
+
+!PunyInform constants
+Constant CUSTOM_ABBREVIATIONS;
+Constant OPTIONAL_EXTENDED_METAVERBS;
+Constant OPTIONAL_EXTENDED_VERBSET;
+Constant OPTIONAL_FULL_DIRECTIONS;
+Constant OPTIONAL_PROVIDE_UNDO;
+Constant RUNTIME_ERRORS 0;!0 for release, 2 for debug
+
+!PunyInform static messages
+Constant MSG_COMMENT_NO_TRANSCRIPT "Comment recorded. Use SCRIPT ON to save future comments in a transcript.^";
+Constant MSG_COMMENT_TRANSCRIPT "Comment recorded.^";
+Constant MSG_PARSER_NO_INPUT "You need to enter a command.";
+Constant MSG_PARSER_UNKNOWN_VERB "That's not a verb I recognise.";
+Constant MSG_SORRY_DEFAULT "Oh, don't apologise.";
+Constant MSG_WAIT_DEFAULT "Time passes...";
+
+!PunyInform dynamic messages
+Constant MSG_CLOSE_NOT_OPEN 1000;
+Constant MSG_LOCK_ALREADY_LOCKED 1001;
+Constant MSG_LOCK_CLOSE_FIRST 1002;
+Constant MSG_LOCK_KEY_DOESNT_FIT 1003;
+Constant MSG_UNLOCK_ALREADY_UNLOCKED 1004;
+Constant MSG_UNLOCK_KEY_DOESNT_FIT 1005;
+
+Constant MSG_DIG_NO_USE 1006;
+
+!Game-specific constants
+Constant AN "an";
+Constant SOME "some";
+Constant THE "the";
+Constant ALL_PIRATES_CLOTHES " all the pirate's clothes - shirt, coat and breeches.";
+Constant CANT_CLIMB_WEARING_FLIPPERS "You can't very well climb a rope while wearing flippers.";
+Constant CASTAWAY_DRAWS_KNIFE "The castaway draws a long, sharp knife and ";
+Constant ENTER_CAVE "Are you waiting for an invitation? Enter the cave.";
+Constant EXAMINE_OR_SEARCH "Try examining or searching the ";
+Constant HEAR_OCEAN_WAVES "You can hear the ocean waves.";
+Constant LEAVE_LANTERN_BEHIND "You'd better leave the lantern behind or it'll get wet.";
+Constant LOOKS_LIKE_GRAPPLING_HOOK " Now it looks like a grappling hook.";
+Constant NEED_TO_CLIMB_OVER_PALISADE "You'll need to climb over the palisade. You can't just walk through it.";
+Constant NEED_TO_WEAR_DIVING_GEAR "You need to be wearing a full set of diving gear before you can dive.";
+Constant PALISADE_IS_TOO_HIGH_TO_CLIMB "The palisade is too high to climb or jump over.";
+Constant SAND_IS_TOO_DRY "The sand is too dry. As soon as you scoop it up, the edges collapse back into the hole.";
+Constant STEEP_CLIFF_PREVENTS_YOU "The steep cliff prevents you going ashore here.";
+Constant TOO_SALTY "It's too salty. It would make you sick.";
+Constant TOO_STEEP_TO_CLIMB "It's too steep to climb.";
+Constant WAVES_WOULD_WASH_YOU_ONTO_ROCKS "The ocean waves would wash you onto the jagged rocks.";
+Constant YOU_CLIMB_OVER_PALISADE "You climb up the rope, balance precariously on top of the palisade, readjust the hook, lower the rope down the other side and climb down.^^";
+Constant YOU_FOCUS_GLASSES_LENS "You focus the glasses' lens on the ";
+
+!Replaced actions
+Replace _UpdateDarkness;
+Replace GoSub;
+Replace LockSub;
+Replace UnlockSub;
+
+Include "globals.h";
+
+!Game-specific variables
+Attribute buoyant;
+Attribute water;
+
+!========================================
+! Entry point routines
+!========================================
+[ LibraryMessages p_msg p_arg_1 p_arg_2;
+  switch (p_msg)
+  {
+    MSG_CLOSE_NOT_OPEN:
+      print_ret (CTheyreOrIts)noun, " already closed.";
+    MSG_LOCK_ALREADY_LOCKED:
+      print_ret (CTheyreOrIts)noun, " already locked.";
+    MSG_LOCK_CLOSE_FIRST:
+      "You'll have to close ", (ItOrThem)noun, " first.";
+    MSG_LOCK_KEY_DOESNT_FIT:
+      print_ret (The)second, " ", (DoesntOrDont)second, " fit the lock.";
+    MSG_UNLOCK_ALREADY_UNLOCKED:
+      print_ret (CTheyreOrIts)noun, " already unlocked.";
+    MSG_UNLOCK_KEY_DOESNT_FIT:
+      print_ret (The)second, " ", (DoesntOrDont)second, " fit the lock.";
+    MSG_DIG_NO_USE:
+      if (location has water)
+        "You can't very well dig in the water.";
+      if (noun == nothing && sand in location)
+        <<Dig sand>>;
+      "You try digging with your bare hands, then curse yourself for setting out on a treasure hunt without a spade or a shovel.";
+  }
+  p_arg_1 = p_arg_2;
+];
+
+Include "puny.h";
+
+!========================================
+! Initialisation
+!========================================
+[ Initialise;
+  location = room01;
+  lookmode = 2;
+  no_implicit_actions = true;
+  player.description = PlayerDescription;
+  "^You'd always been fascinated by stories of pirates and sunken galleons and lost treasures. When you learnt how to sail a yacht, you started taking this interest a little more seriously and started studying old maps and manuscripts in various libraries.^^Then, one day, you found a musty old manuscript that hinted at the location of a pirate ship that had sunk off the coast of a small uncharted island in the Caribbean. This was what you'd been looking for! After a little more research, you found that the island was uncharted when the manuscript was written, but nothing is uncharted nowadays and you were easily able to find it on current navigation charts.^^On your next summer vacation, you rented a small yacht and sailed to the location indicated on the manuscript, where you found a small tropical island far from the normal tourist routes. You moored the yacht in a tranquil bay a few metres offshore and swam to the beach, tingling with excitement. When you explored the area along the beach, it was blocked by a steep cliff, so you retraced your steps.^^When you returned to the beach, you noticed footprints in the sand that weren't there before. They weren't yours! They started at the vegetation bordering the beach, headed into the water, then returned and disappeared back into the vegetation. The footprints were only shallow, so the owner must have been very slight of build.^^You started to panic. Could the island be inhabited by savages? How many were there? Were they friendly or were they barbaric? Might they have entered the yacht and damaged it. Should you check the yacht or should you follow the footsteps into the vegetation?^";
+];
+
+!========================================
+! Room 1: Tropical Beach
+!========================================
+Object room01 "Tropical Beach"
+with
+  description "You're on a sandy beach that skirts a bay on the west coast of a small tropical island. As you look west, you can see your yacht moored in the bay. Beyond that, the crystal clear water extends to the horizon. A patch of tropical vegetation to the north follows the top of a headland that protects the bay. You can't go east, due to a rocky cliff, but you can go south around the base of the cliff.",
+  n_to room07,
+  s_to room05,
+  w_to
+  [;
+    if (lantern in player)
+      print_ret (string)LEAVE_LANTERN_BEHIND;
+    else
+      return room02;
+  ],
+  before
+  [;
+    Swim:
+      <<Go FAKE_W_OBJ>>;
+  ],
+has light;
+
+!----------------------------------------
+! Tropical beach (floating object)
+!----------------------------------------
+Object "tropical beach"
+with
+  name 'tropical' 'beach' 'sandy',
+  description
+  [;
+    print "The beach is covered in pure white sand";
+    if (self in room01)
+      ". You notice some footprints in the sand that aren't yours.";
+    else
+      " that forms a cresent around the east of the bay.";
+  ],
+  before
+  [;
+    Swim:
+      if (self in room02)
+        <<Go FAKE_E_OBJ>>;
+  ],
+  found_in room01 room02 room03 room05,
+has scenery;
+
+!----------------------------------------
+! Sand (floating object)
+!----------------------------------------
+Object sand "sand"
+with
+  article SOME,
+  name 'pure' 'white' 'sand',
+  description
+  [;
+    print "The sand is pure white.";
+    if (self in room16)
+      print " Unlike the sand on the beach, this sand is saturated with sea water.";
+    "";
+  ],
+  before
+  [;
+    Dig:
+      if (self in room16)
+        "As you dig, sea water fills the hole. You don't dig very far before you hit rock.";
+      else
+        print_ret (string)SAND_IS_TOO_DRY;
+    Take:
+      "Your pockets aren't big enough to hold all that sand.";
+  ],
+  found_in room01 room05 room06 room09 room16,
+has scenery;
+
+!----------------------------------------
+! Bay (as seen from island) (floating object)
+!----------------------------------------
+Object "bay"
+with
+  name 'bay' 'majestic' 'view',
+  description "The bay is protected by the headland so that water laps gently along the shoreline.",
+  before
+  [;
+    Enter:
+      if (self in room01)
+        <<Go FAKE_W_OBJ>>;
+      if (self in room03)
+        <<Go FAKE_E_OBJ>>;
+  ],
+  found_in room01 room02 room03 room08,
+has scenery;
+
+!----------------------------------------
+! Coast (as seen from island) (floating object)
+!----------------------------------------
+Object "coast"
+with
+  article THE,
+  name 'coast' 'coastline' 'shore' 'shoreline',
+  description "The coast of the bay is a crescent of pure white sand.",
+  before
+  [;
+    Swim:
+      if (self in room02)
+        <<Go FAKE_E_OBJ>>;
+  ],
+  found_in room01 room02 room03 room08,
+has scenery;
+
+!----------------------------------------
+! Tropical island (floating object)
+!----------------------------------------
+Object "tropical island"
+with
+  name 'tropical' 'island' 'small' 'beautiful' 'paradise',
+  description
+  [;
+    if (self in room02 or room03)
+      "It looks quite beautiful, but you can see it clearer if you go there. It's within swimming distance.";!As seen from bay
+    else
+      "It looks like a tropical paradise.";!As seen from elsewhere
+  ],
+  found_in room01 room02 room03 room05 room06 room07 room08 room09,
+has scenery;
+
+!----------------------------------------
+! Headland (floating object)
+!----------------------------------------
+Object "headland"
+with
+  name 'headland',
+  description
+  [;
+    if (self in room08)
+      "The headland is elevated above this part of the island, giving a majestic view over the bay to the south. The view to the north and east are blocked by the tropical vegetation.";
+    else
+      "The headland to the north protects the bay from the ocean waves.";
+  ],
+  found_in room01 room02 room03 room08,
+has scenery;
+
+!----------------------------------------
+! Horizon (floating object)
+!----------------------------------------
+Object "horizon"
+with
+  article THE,
+  name 'horizon' 'azure' 'blue' 'sky',
+  description "As you gaze to the west, you see where the azure blue sky meets the dark blue sea far beyond the island.",
+  found_in room01 room02 room03 room08 room09,
+has scenery;
+
+!----------------------------------------
+! Yacht (floating object)
+!----------------------------------------
+Object "yacht"
+with
+  name 'yacht' 'boat' 'small' 'modest',
+  description
+  [;
+    if (self in room01)
+      "It's moored in the shallow water of the bay about 50 metres to the west.";
+    else
+      "It's the small yacht that you rented for your summer vacation. It's only modest, as you couldn't afford anything fancy.";
+  ],
+  before
+  [;
+    Enter:
+      if (self in room01)
+        "You'll have to swim out to it first.";
+      if (self in room02)
+        <<Go FAKE_U_OBJ>>;
+      "You're already on board.";
+    Exit:
+      if (self in room04)
+        "You'll have to get on deck first.";
+      if (self in room03)
+        <<Go FAKE_E_OBJ>>;
+      "You're not on board.";
+    Swim:
+      if (self in room01)
+        <<Go FAKE_W_OBJ>>;
+  ],
+  found_in room01 room02 room03 room04,
+has scenery;
+
+!----------------------------------------
+! Ocean on west side of island (floating object)
+!----------------------------------------
+Object "ocean"
+with
+  article THE,
+  name 'ocean' 'sea' 'water' 'shallow' 'crystal' 'clear' 'pale' 'blue',
+  description "The sea water in the bay is crystal clear and pale blue due to the shallow depth and the white sand of the sea bed.",
+  before
+  [;
+    Drink:
+      print_ret (string)TOO_SALTY;
+    Enter:
+      if (self in room01)
+        <<Go FAKE_W_OBJ>>;
+      if (self in room02)
+        "You're already in it.";
+      if (self in room03)
+        <<Go FAKE_E_OBJ>>;
+  ],
+  found_in room01 room02 room03 room08,
+has scenery;
+
+!----------------------------------------
+! Footprints
+!----------------------------------------
+Object "footprints" room01
+with
+  name 'footprints',
+  description "These footprints can't be yours, as they were made by bare feet, whereas you're wearing sneakers. They head from the vegetation in the north, across the beach to the water and back again. You note that the footprints heading to the water aren't as deep as the ones returning from the water.",
+has pluralname scenery;
+
+!----------------------------------------
+! Tropical vegetation (floating object)
+!----------------------------------------
+Object "tropical vegetation"
+with
+  article THE,
+  name 'tropical' 'vegetation' 'thick' 'patch' 'of' 'undergrowth' 'tangled' 'vine' 'vines' 'palm' 'tree' 'trees',
+  description "The vegetation consists of thick undergrowth, tangled vines and palm trees.",
+  before
+  [;
+    Climb:
+      "You're not a monkey.";
+  ],
+  found_in room01 room07 room08 room09 room10 room18,
+has scenery;
+
+!----------------------------------------
+! Cliff (floating object)
+!----------------------------------------
+Object "rocky cliff"
+with
+  name 'cliff' 'rock' 'rocky' 'face' 'base' 'foot' 'of' 'very' 'high',
+  description "The cliff dominates the south part of the island. It towers over you, as if the island had once been severed in two. It's very steep, so don't even think about climbing it.",
+  before
+  [;
+    Climb:
+      "It's far too steep to climb, even for a mountain goat.";
+  ],
+  found_in room01 room05 room06,
+has scenery;
+
+!========================================
+! Room 2: Bay West of Island
+!========================================
+Object room02 "Bay West of Island"
+with
+  description "You're bobbing around in the sea water adjacent to the hull of your yacht. It's moored in a bay off the west coast of a beautiful tropical island. You can go up to board the yacht or swim to the beach, which is just a short distance to the east.",
+  e_to room01,
+  u_to room03,
+  cant_go "You can only swim east to the beach or go up to board the yacht.",
+  before
+  [;
+    Dive:
+      "The water in the bay isn't deep enough for diving.";
+    Hint:
+      if (room03 hasnt visited)
+        "Try boarding your yacht (or just go up) to see what's on board.";
+    Swim:
+      <<Go FAKE_E_OBJ>>;
+  ],
+has light water;
+
+!----------------------------------------
+! Hull
+!----------------------------------------
+Object "hull" room02
+with
+  article THE,
+  name 'hull' 'aida' 'side',
+  description "It has the name 'Aida' painted on the side, but that's not important.",
+has scenery;
+
+!========================================
+! Room 3: Deck of Yacht
+!========================================
+Object room03 "Deck of Yacht"
+with
+  description
+  [;
+    print "You're on the deck of your yacht. Nothing seems to be damaged";
+    if (scuba notin self)
+    {
+      print ", but you notice that your scuba gear has been taken";
+      if (scuba has moved)
+        print ". Fortunately, you've now found it";
+    }
+    ". The yacht is moored about 50 metres from the shore of a beautiful tropical island. If you jump overboard, you can swim to the beach to the east. Otherwise, some steps lead down to the cabin.";
+  ],
+  e_to room02,
+  d_to room04,
+  in_to room04,
+  before
+  [;
+    Dive, Jump, Swim:
+      <<Go FAKE_E_OBJ>>;
+    Hint:
+      if (room04 hasnt visited)
+        "Try going down the stairs to see what's below deck.";
+  ],
+has light;
+
+!----------------------------------------
+! Deck
+!----------------------------------------
+Object "deck" room03
+with
+  article THE,
+  name 'deck',
+  description "The deck is quite clean, apart from some fresh seagull poop.",
+has scenery;
+
+!----------------------------------------
+! Seagull poop
+!----------------------------------------
+Object "seagull poop" room03
+with
+  article SOME,
+  name 'seagull' 'poop' 'poo' 'droppings',
+  description "It's the inevitable scourge of the sailor. You wish seagulls were toilet trained.",
+  before
+  [;
+    Take:
+      "Don't be disgusting.";
+  ],
+has scenery;
+
+!----------------------------------------
+! Steps (floating object)
+!----------------------------------------
+Object "steps"
+with
+  name 'steps' 'stairs' 'step' 'stair',
+  description
+  [;
+    print "They're narrow steps that go ";
+    if (self in room04)
+      "up to the deck.";
+    else
+      "down to the cabin.";
+  ],
+  before
+  [;
+    Climb, Enter:
+      if (self in room04)
+        <<Go FAKE_U_OBJ>>;
+      else
+        <<Go FAKE_D_OBJ>>;
+  ],
+  found_in room03 room04,
+has pluralname scenery;
+
+!========================================
+! Room 4: Cabin of Yacht
+!========================================
+Object room04 "Cabin of Yacht"
+with
+  description "You're in the cabin of your yacht. The interior shows signs of a recent looting and many of the furnishings are now damaged. There are objects scattered everywhere, but nothing seems to have been taken. Some steps go up to the deck outside the cabin.",
+  u_to room03,
+  out_to room03,
+  before
+  [;
+    Hint:
+      if (glasses in nothing)
+        print_ret (string)EXAMINE_OR_SEARCH, "cabin to see if anything is missing.";
+  ],
+has light;
+
+!----------------------------------------
+! Cabin
+!----------------------------------------
+Object "cabin" room04
+with
+  article THE,
+  name 'cabin' 'interior' 'furnishings' 'object' 'objects' 'mess' 'bunk',
+  description
+  [;
+    print "It's a bit of a mess, but you can clean it up later.";
+    if (glasses in nothing)
+    {
+      move glasses to location;
+      print " In amongst the mess, you find a pair of glasses.";
+    }
+    "";
+  ],
+  before
+  [;
+    Search:
+      <<Examine self>>;
+  ],
+has scenery;
+
+!----------------------------------------
+! Glasses
+!----------------------------------------
+Object glasses "glasses"
+with
+  article "a pair of",
+  name 'pair' 'of' 'reading' 'glasses' 'spectacles' 'specs' 'very' 'thick' 'lens' 'lenses',
+  description "They look like reading glasses with very thick lenses, but they're not yours. Perhaps the intruder dropped them when they rifled through your cabin.",
+  before
+  [;
+    Wear:
+      if (location has light)
+        "Whoa, everything looks horribly distorted. You feel disoriented, so you take them off again. Upon closer inspection, you see that the lenses are like magnifying glasses. Whoever wore these must have had very poor vision.";
+      else
+        "Er, nope, they aren't night vision glasses and they don't help you see in the dark, so you take them off again.";
+  ],
+has clothing pluralname;
+
+!========================================
+! Room 5: Group of Jagged Rocks
+!========================================
+Object room05 "Group of Jagged Rocks"
+with
+  description "You're at a group of jagged rocks projecting from the sand on the south coast of the island. The rocks protect the quiet bay towards the north while the open ocean is to the south. You can also follow the base of the high cliff towards the east.",
+  n_to room01,
+  s_to WAVES_WOULD_WASH_YOU_ONTO_ROCKS,
+  e_to room06,
+  before
+  [;
+    Hint:
+      if (hook in nothing)
+        "Try looking under the plank or picking it up.";
+    Listen:
+      print_ret (string)HEAR_OCEAN_WAVES;
+    Swim:
+      <<Go FAKE_S_OBJ>>;
+  ],
+has light;
+
+!----------------------------------------
+! Jagged rocks (floating object)
+!----------------------------------------
+Object "jagged rocks"
+with
+  name 'group' 'of' 'jagged' 'rock' 'rocks' 'sentinels',
+  description "The jagged rocks poke through the sand like sentinels standing guard over the cliff at the south end of the island.",
+  before
+  [;
+    Pull, Push, Take:
+      "They're as solid as a rock. (They're rocks. Solid as a rock. Get it? Oh, forget it. Good puns are wasted on some people.)";
+  ],
+  found_in room05 room06,
+has pluralname scenery;
+
+!----------------------------------------
+! South coast (floating object)
+!----------------------------------------
+Object "south coast"
+with
+  article THE,
+  name 'south' 'coast' 'southern' 'extremity',
+  description "This is the southern extremity of the island, between the rocks and the ocean.",
+  found_in room05 room06,
+has scenery;
+
+!----------------------------------------
+! Wooden plank
+!----------------------------------------
+Object plank "wooden plank" room05
+with
+  name 'wooden' 'plank',
+  description "It looks like the plank off the hull of a ship.",
+  before
+  [;
+    Burn:
+      if (CantBeLit())
+        rtrue;
+      print_ret (string)YOU_FOCUS_GLASSES_LENS, "plank and adjust the beam of sunlight until you get a strong point of light, but nothing happens. Maybe the plank is too wet. After a while, you give up.";
+    LookUnder:
+      if (self hasnt moved)
+      {
+        print "There's nothing but sand.";
+        if (hook in nothing)
+        {
+          move hook to location;
+          print " Oh, wait, there's a hook pressed into the sand, so you move it out from under the plank.";
+        }
+        "";
+      }
+  ],
+  after
+  [;
+    Take:
+      if (hook in nothing)
+      {
+        move hook to location;
+        "When you pick up the plank, you reveal a hook pressed into the sand.";
+      }
+  ],
+has buoyant;
+
+!----------------------------------------
+! Metal hook
+!----------------------------------------
+Object hook "metal hook"
+with
+  name 'metal' 'hook',
+  description "It's a metal hook that looks like something from a ship's rigging.",
+  before
+  [;
+    Tie:
+      if (CantBeTied())
+        rtrue;
+      move rope to limbo;
+      move rope_with_hook to parent(self);
+      move self to limbo;
+      PronounNotice(rope_with_hook);
+      "You tie the hook to the rope.", (string)LOOKS_LIKE_GRAPPLING_HOOK;
+  ],
+has;
+
+!========================================
+! Room 6: Foot of Cliff
+!========================================
+Object room06 "Foot of Cliff"
+with
+  description "You're at the foot of a very high cliff that looks like it would be constantly washed by the ocean waves during high tides and rough seas. Deep sand has collected between the rocks. A large outcrop of rock prevents further progress around the coastline to the east, although it does contain a sea cave that you could enter. You can return to the beach to the west.",
+  s_to WAVES_WOULD_WASH_YOU_ONTO_ROCKS,
+  e_to room16,
+  w_to room05,
+  in_to room16,
+  before
+  [;
+    Go:
+      if (selected_direction == e_to or in_to)
+        StartDaemon(room16);
+      rfalse;
+    Hint:
+      if (rope in nothing)
+        print_ret (string)EXAMINE_OR_SEARCH, "anchor.";
+      if (room16 hasnt visited)
+        print_ret (string)ENTER_CAVE;
+    Listen:
+      print_ret (string)HEAR_OCEAN_WAVES;
+    Swim:
+      <<Go FAKE_S_OBJ>>;
+  ],
+has light;
+
+!----------------------------------------
+! Outcrop of rock
+!----------------------------------------
+Object "outcrop of rock" room06
+with
+  article AN,
+  name 'outcrop' 'of' 'rock' 'large',
+  description "The outcrop of rock is an extension of the cliff that prevents further exploration to the east, unless you're prepared to enter the sea cave.",
+  before
+  [;
+    Climb:
+      "You climb a metre or so up the outcrop, but the sharp rock cuts into your fingers, so you jump back down.";
+  ],
+has scenery;
+
+!----------------------------------------
+! Sea cave (floating object)
+!----------------------------------------
+Object "sea cave"
+with
+  parse_name
+  [ nw i flag;
+    nw = NextWord();
+    while (nw == 'large' or 'sea' or 'cave' or 'entrance')
+    {
+      i++;
+      if (nw == 'sea')
+        flag++;
+      nw = NextWord();
+    }
+    if (i == flag)
+      return 0;
+    return i;
+  ],
+  description "The sea cave is mostly below the high-tide mark. Be careful of getting caught inside the cave if the sea level rises.",
+  before
+  [;
+    Enter:
+      if (self in room06)
+        <<Go FAKE_E_OBJ>>;
+    Exit:
+      if (self in room16)
+        <<Go FAKE_W_OBJ>>;
+  ],
+  found_in room06 room16,
+has scenery;
+
+!----------------------------------------
+! High-tide mark (floating object)
+!----------------------------------------
+Object "high-tide mark"
+with
+  name 'high-tide' 'high' 'tide' 'mark' 'marking',
+  description "The high-tide mark is above your head.",
+  found_in room06 room16,
+has scenery;
+
+!----------------------------------------
+! Old anchor
+!----------------------------------------
+Object "old anchor" room06
+with
+  article AN,
+  name 'old' 'anchor',
+  description
+  [;
+    print "It's a rusty old ship's anchor that's half-submerged in the sand.";
+    if (rope in nothing)
+      print " You wonder if you could dig it out.";
+    "";
+  ],
+  before
+  [;
+    Dig, Search:
+      print "You search the anchor, then try to dig it out of the sand, but it's way too deep.";
+      if (rope in nothing)
+      {
+        move rope to location;
+        print " However, you do discover a rope.";
+      }
+      "";
+    Pull, Push, Take:
+      "You can't be serious. It's half-submerged in the sand. Even if it wasn't, it's too heavy to carry.";
+  ],
+has static;
+
+!----------------------------------------
+! Rope
+!----------------------------------------
+Object rope "rope"
+with
+  name 'rope',
+  description "It's a short length of rope that you found on the beach.",
+  before
+  [;
+    ThrowAt:
+      "You hang onto one end of the rope and throw the other end. It has nothing to hook onto, so you gather it up again.";
+    Tie:
+      if (CantBeTied())
+        rtrue;
+      move hook to limbo;
+      move rope_with_hook to parent(self);
+      move self to limbo;
+      PronounNotice(rope_with_hook);
+      "You tie the rope to the hook.", (string)LOOKS_LIKE_GRAPPLING_HOOK;
+  ],
+has buoyant;
+
+!----------------------------------------
+! Rope with a hook attached
+!----------------------------------------
+Object rope_with_hook "rope with a hook attached"
+with
+  name 'rope' 'with' 'grappling' 'hook' 'attached',
+  description "It's a short length of rope tied to the hook that you found on the beach. It now looks like a grappling hook.",
+  before
+  [;
+    ThrowAt:
+      if (second == player)
+        "The hook hits you in the head. Youch! You've done some silly things in your life and that's another one to add to the list.";
+      if (second ~= palisade || palisade notin location)
+      {
+        move self to location;
+        "The rope and hook land on the ground. That was a pretty pointless exercise.";
+      }
+      remove self;
+      move hanging_rope to location;
+      PronounNotice(hanging_rope);
+      "You hang onto the end of the rope and throw the hook over the palisade. It catches. You pull it tight and it feels sturdy.";
+    Tie:
+      "If you want to tie the rope to something else, you'll have to untie it from the hook first.";
+    Untie:
+      move hook to parent(self);
+      move rope to parent(self);
+      remove self;
+      PronounNotice(rope);
+      "You untie the rope from the hook.";
+  ],
+has;
+
+!========================================
+! Room 7: Tropical Vegetation
+!========================================
+Object room07 "Tropical Vegetation"
+with
+  description "You're in a thick patch of tropical vegetation that blocks your view of the beach to the south. It extends to the west, but thins out to the north and east.",
+  n_to room10,
+  s_to room01,
+  e_to room13,
+  w_to room08,
+has light;
+
+!========================================
+! Room 8: Headland
+!========================================
+Object room08 "Headland"
+with
+  description "The headland provides a majestic view over the bay to the south. A faint track winds north and east through the vegetation.",
+  n_to room09,
+  e_to room07,
+has light;
+
+!----------------------------------------
+! Track (floating object)
+!----------------------------------------
+Object "track"
+with
+  name 'faint' 'track' 'tracks' 'path' 'paths',
+  description
+  [;
+    print "The track winds through the vegetation to the ";
+    if (self in room10)
+      "north, south, east and west.";
+    if (self in room08)
+      print "north";
+    else
+      print "south";
+    " and east.";
+  ],
+  found_in room08 room09 room10,
+has scenery;
+
+!========================================
+! Room 9: Ocean Beach
+!========================================
+Object room09 "Ocean Beach"
+with
+  description "This strip of beach is isolated by thick vegetation. However, there are faint tracks to the south and east. You can't see the bay from here because of the thick vegetation to the south. There's a heavy surf rolling in from the west, which is why you couldn't moor here.",
+  s_to room08,
+  e_to room10,
+  w_to "The waves are too strong to enter the water here.",
+  before
+  [;
+    Listen:
+      print_ret (string)HEAR_OCEAN_WAVES;
+    Swim:
+      <<Go FAKE_W_OBJ>>;
+  ],
+has light;
+
+!----------------------------------------
+! Ocean (floating object)
+!----------------------------------------
+Object "ocean"
+with
+  article THE,
+  name 'ocean' 'sea' 'water' 'waves' 'heavy' 'surf',
+  description
+  [;
+    print "The ocean waves are rolling in from the ";
+    if (self in room09)
+      "west.";
+    else
+      "south.";
+  ],
+  before
+  [;
+    Drink:
+      print_ret (string)TOO_SALTY;
+    Enter:
+      if (self in room09)
+        <<Go FAKE_W_OBJ>>;
+      else
+        <<Go FAKE_S_OBJ>>;
+  ],
+  found_in room05 room06 room09,
+has scenery;
+
+!----------------------------------------
+! Ocean beach
+!----------------------------------------
+Object "ocean beach" room09
+with
+  article AN,
+  parse_name
+  [ nw i flag;
+    nw = NextWord();
+    while (nw == 'ocean' or 'beach' or 'strip' or 'of' or 'sandy')
+    {
+      i++;
+      if (nw == 'ocean')
+        flag++;
+      nw = NextWord();
+    }
+    if (i == flag)
+      return 0;
+    return i;
+  ],
+  description "This is a short length of sandy beach pounded by the ocean waves rolling in from the west.",
+  before
+  [;
+    Dig:
+      print_ret (string)SAND_IS_TOO_DRY;
+  ],
+has scenery;
+
+!========================================
+! Room 10: Clearing
+!========================================
+Object room10 "Clearing"
+with
+  description "This large clearing is surrounded by thick vegetation to the north and south and the vegetation thins out to the east. You can hear the ocean to the west. There are faint tracks in each of those directions.",
+  n_to room18,
+  s_to room07,
+  e_to room11,
+  w_to room09,
+  before
+  [;
+    Listen:
+      print_ret (string)HEAR_OCEAN_WAVES;
+  ],
+has light;
+
+!----------------------------------------
+! Clearing
+!----------------------------------------
+Object "clearing" room10
+with
+  name 'large' 'clearing',
+  description "You can see no obvious reason for the clearing. It doesn't appear to be man-made, so maybe the soil is too sandy for the vegetation to take root.",
+has scenery;
+
+!========================================
+! Room 11: Bottom of Hill
+!========================================
+Object room11 "Bottom of Hill"
+with
+  description "You're at the bottom of a hill that climbs up a steep slope to the east. The runoff from the slope has made this area quite marshy and swarms of insects fill the air around you. You can avoid the insects by going back to the west.",
+  e_to room12,
+  w_to room10,
+  u_to room12,
+  before
+  [;
+    Listen:
+      "You hear the buzzing of insects.";
+  ],
+has light;
+
+!----------------------------------------
+! Bottom of hill
+!----------------------------------------
+Object "bottom of the hill" room11
+with
+  article THE,
+  name 'bottom' 'of' 'hill' 'marsh' 'marshy' 'runoff',
+  description "The area at the bottom of the hill is quite marshy.",
+  before
+  [;
+    Climb:
+      <<Go FAKE_U_OBJ>>;
+  ],
+has scenery;
+
+!----------------------------------------
+! Steep slope (floating object)
+!----------------------------------------
+Object "steep slope"
+with
+  name 'steep' 'slope' 'rocky',
+  description "The slope is quite rocky.",
+  before
+  [;
+    Climb:
+      if (self in room12)
+        "Up or down?";
+      if (self in room11)
+        <<Go FAKE_U_OBJ>>;
+      else
+        <<Go FAKE_D_OBJ>>;
+  ],
+  found_in room11 room12 room21,
+has scenery;
+
+!----------------------------------------
+! Insects
+!----------------------------------------
+Object "insects" room11
+with
+  name 'swarms' 'clouds' 'of' 'insects' 'mosquitoes' 'mosquitos' 'bugs',
+  description "The insects come in all shapes and sizes. They buzz around in constantly moving clouds. You'd better not hang around here for too long, in case there are any malaria-carrying mosquitoes.",
+  before
+  [;
+    if (action ~= ##Attack or ##Examine)
+      "Leave them alone. They're not going to help you find any treasure.";
+    Attack:
+      "You try swatting the insects, but there are thousands of them and they just fly out of the way.";
+  ],
+has pluralname scenery;
+
+!========================================
+! Room 12: Steep Slope
+!========================================
+Object room12 "Steep Slope"
+with
+  description "You're on a steep slope that climbs the side of the hill. You can climb up to reach the top or climb down to return to the marshy area at the bottom of the hill.",
+  w_to room11,
+  u_to room21,
+  d_to room11,
+  before
+  [;
+    Hint:
+      if (stone hasnt moved)
+        "That stone could come in handy if you need to break anything.";
+  ],
+has light;
+
+!----------------------------------------
+! Hill (floating object)
+!----------------------------------------
+Object "hill"
+with
+  name 'hill' 'rocky' 'peak',
+  description
+  [;
+    print "You're ";
+    if (self in room12)
+      "half way up the hill.";
+    else
+      "at the top of the hill, where it culminates in a rocky peak overlooking a steep cliff to the east.";
+  ],
+  before
+  [;
+    Climb:
+      if (self in room12)
+        "Up or down?";
+      else
+        <<Go FAKE_D_OBJ>>;
+  ],
+  found_in room12 room21,
+has scenery;
+
+!----------------------------------------
+! Stone
+!----------------------------------------
+Object stone "stone" room12
+with
+  name 'stone' 'good' 'solid' 'sharp' 'edges' 'fist-sized' 'fist' 'sized',
+  description "It's a good solid stone with sharp edges. I'd say it's about fist sized.",
+has;
+
+!========================================
+! Room 13: Foot of High Palisade
+!========================================
+Object room13 "Foot of High Palisade"
+with
+  description "You're at the foot of a high palisade that blocks your passage to the east. On the other side of the palisade, you can see a rock face. A faint path leads through the vegetation to the west.",
+  e_to NEED_TO_CLIMB_OVER_PALISADE,
+  w_to room07,
+  u_to
+  [;
+    if (hanging_rope notin location)
+      print_ret (string)PALISADE_IS_TOO_HIGH_TO_CLIMB;
+    if (flippers has worn)
+      print_ret (string)CANT_CLIMB_WEARING_FLIPPERS;
+    move hanging_rope to room14;
+    print (string)YOU_CLIMB_OVER_PALISADE;
+    return room14;
+  ],
+  before
+  [;
+    Hint:
+      if (hook in nothing || rope in nothing)
+        "Explore the south side of the island and come back later.";
+      if (room14 hasnt visited)
+      {
+        if (hanging_rope notin location && rope_with_hook in nothing)
+          "Here's a knotty problem to be grappled with. If you're trying to climb over the palisade, try tying two things together.";
+        if (hanging_rope notin location)
+          "Throw the grappling hook over the palisade.";
+        "Climb the rope.";
+      }
+  ],
+has light;
+
+!----------------------------------------
+! Palisade (floating object)
+!----------------------------------------
+Object palisade "palisade"
+with
+  name 'palisade' 'fence' 'foot' 'of' 'vertical' 'high' 'wooden' 'stake' 'stakes' 'sharp' 'sharpened' 'point' 'defensive' 'wall' 'formidable' 'defence',
+  description "The palisade consists of a fence of vertical wooden stakes fixed into the ground to form a defensive wall around an enclosure. Each stake is sharpened to a point at the top. You wonder who constructed it and why they would need such a formidable defence on an isolated tropical island.",
+  before
+  [;
+    Climb, JumpOver:
+      print_ret (string)PALISADE_IS_TOO_HIGH_TO_CLIMB;
+  ],
+  found_in room13 room14,
+has scenery;
+
+!----------------------------------------
+! Rock face (floating object)
+!----------------------------------------
+Object "rock face"
+with
+  name 'foot' 'of' 'rock' 'face',
+  description
+  [;
+    if (self in room13)
+      "You can probably see it better from the other side of the palisade.";
+    else
+      "The rock face is too steep to climb, but it does have a small cave.";
+  ],
+  before
+  [;
+    Climb:
+      if (self in room14)
+        print_ret (string)TOO_STEEP_TO_CLIMB;
+  ],
+  found_in room13 room14,
+has scenery;
+
+!----------------------------------------
+! Rope hanging from palisade
+!----------------------------------------
+Object hanging_rope "rope hanging from the palisade"
+with
+  name 'rope' 'hanging' 'from' 'palisade' 'fence',
+  description "It's the rope you found at the beach. It's currently hooked over the top of the palisade, allowing you to climb over, if you're agile enough.",
+  before
+  [;
+    Climb:
+      <<Go FAKE_U_OBJ>>;
+    Take:
+      if (children(player) < MAX_CARRIED)
+      {
+        remove self;
+        move rope_with_hook to player;
+        PronounNotice(rope_with_hook);
+        "You flick the rope a few times until you dislodge the hook. The rope and hook fall to the ground and you scoop it up into your arms.";
+      }
+  ],
+has static;
+
+!========================================
+! Room 14: Foot of Rock Face
+!========================================
+Object room14 "Foot of Rock Face"
+with
+  description "You're on the east side of the palisade at the foot of a rock face to the east. The rock face is too steep to climb, but it does house a small cave.",
+  e_to room15,
+  w_to NEED_TO_CLIMB_OVER_PALISADE,
+  u_to
+  [;
+    if (hanging_rope notin location)
+      print_ret (string)PALISADE_IS_TOO_HIGH_TO_CLIMB;
+    if (flippers has worn)
+      print_ret (string)CANT_CLIMB_WEARING_FLIPPERS;
+    move hanging_rope to room13;
+    print (string)YOU_CLIMB_OVER_PALISADE;
+    return room13;
+  ],
+  in_to room15,
+  before
+  [;
+    Hint:
+      if (room15 hasnt visited)
+        print_ret (string)ENTER_CAVE;
+  ],
+has light;
+
+!----------------------------------------
+! Small cave (floating object)
+!----------------------------------------
+Object "small cave"
+with
+  name 'small' 'cave' 'recess',
+  description "It's nothing more than a small recess gouged into the rock.",
+  before
+  [;
+    Enter:
+      if (self in room14)
+        <<Go FAKE_E_OBJ>>;
+    Exit:
+      if (self in room15)
+        <<Go FAKE_W_OBJ>>;
+  ],
+  found_in room14 room15,
+has scenery;
+
+!========================================
+! Room 15: Inside Small Cave
+!========================================
+Object room15 "Inside Small Cave"
+with
+  description "This small cave is lit by the sun streaming in from the west. The sunlight reveals signs that it has been used for human habitation, but it's now abandoned.",
+  w_to room14,
+  out_to room14,
+  before
+  [;
+    Hint:
+      if (padlock in nothing)
+        "Try opening the chest.";
+      if (padlock has static)
+        "That padlock looks pretty rusty, so it's probably not very strong.";
+      if (chest hasnt open && lantern hasnt moved)
+        "That chest isn't going to open itself, you know.";
+  ],
+has light;
+
+!----------------------------------------
+! Sunlight (floating object)
+!----------------------------------------
+Object "sunlight"
+with
+  article THE,
+  name 'sunlight' 'bright' 'sun' 'light' 'daylight',
+  description "You can see the bright daylight outside the entrance of the cave.",
+  found_in room15 room16,
+has scenery;
+
+!----------------------------------------
+! Large chest
+!----------------------------------------
+Object chest "large chest" room15
+with
+  name 'large' 'chest' 'trunk',
+  invent
+  [;
+    if (inventory_stage == 2 && (self hasnt open || child(self) == 0))
+      rtrue;
+  ],
+  description
+  [;
+    print "It's a large wooden chest reinforced by brass bands. ";
+    <<Search self>>;
+  ],
+  before
+  [;
+    Open:
+      if (self has locked)
+      {
+        if (padlock in nothing)
+          move padlock to location;
+        "There's a heavy padlock on the chest that prevents it from being opened.";
+      }
+    Take:
+      "In your dreams. It's far too heavy to move, which makes you wonder how it got here.";
+  ],
+  with_key dummy_key,
+has container openable lockable locked static;
+
+!----------------------------------------
+! Brass bands
+!----------------------------------------
+Object "brass bands" room15
+with
+  name 'brass' 'band' 'bands',
+  description "These brass bands won't be playing any music any time soon.",
+has pluralname scenery;
+
+!----------------------------------------
+! Rusty padlock
+!----------------------------------------
+Object padlock "rusty padlock"
+with
+  name 'padlock' 'lock' 'heavy' 'rusty',
+  description
+  [;
+    print "It's a rusty old padlock that's ";
+    if (self has static)
+      "doing a good job of keeping the chest locked.";
+    else
+      "now broken from where you battered it with the stone.";
+  ],
+  before
+  [;
+    Attack:
+      if (self hasnt static)
+        "It's already broken.";
+      if (second == nothing && stone in player)
+      {
+        print "(with the stone)^";
+        second = stone;
+      }
+      if (second == nothing)
+        "You'll have to tell me what to break it with.";
+      if (second notin player)
+        "You aren't carrying ", (the)second, ".";
+      print "You bash away at the padlock with ", (the)second;
+      if (second ~= stone)
+        ", but it has no impact.";
+      give self ~static;
+      give chest ~locked;
+      " until it eventually snaps and falls to the ground.";
+    Open, Unlock:
+      if (self has static)
+        "You don't have the key. Even if you did, it looks like it's too rusty to open.";
+      else
+        "You've already broken it.";
+    Take:
+      if (self has static)
+        "You can't. It's attached to the chest.";
+  ],
+has static;
+
+!----------------------------------------
+! Old lantern
+!----------------------------------------
+Object lantern "old lantern" chest
+with
+  article AN,
+  name 'old' 'kerosene' 'lantern' 'lamp' 'wick',
+  description
+  [;
+    print "It looks like an old kerosene lantern. It's ";
+    if (self has light)
+      "currently lit and emitting a dull yellow glow.";
+    print "not currently lit, but ";
+    if (self in player)
+      print "you can hear the kerosene splooshing around inside and ";
+    "the wick looks dry, so you should be able to light it.";
+  ],
+  before
+  [;
+    Burn:
+      if (self has light)
+        "It's already lit.";
+      if (CantBeLit())
+        rtrue;
+      give self light;
+      print_ret (string)YOU_FOCUS_GLASSES_LENS, "wick and adjust the beam of sunlight until you get a strong point of light. After a little while, the wick starts to smoulder, then springs into flame when the heat reaches the kerosene-drenched part of the wick. That should last awhile.";
+    Drop:
+      if (real_location == room16 or room17)
+        "Don't drop it here or it'll get wet and you won't be able to use it.";
+    Extinguish, SwitchOff:
+      if (self hasnt light)
+        "It's already extinguished.";
+      give self ~light;
+      "You blow out the naked flame and the glow from the lantern quickly dies.";
+    SwitchOn:
+      if (self has light)
+        "It's already lit.";
+      "It's not an automatic lantern. You'll need to find a way to light the wick.";
+  ],
+has buoyant;
+
+!========================================
+! Room 16: Inside Sea Cave
+!========================================
+Object room16 "Inside Sea Cave"
+with
+  description "You're inside a large sea cave. At the bottom of the cave, you can see pools of water and a lot of sand. You can see that the domed ceiling is full of cracks, but it's out of your reach. Although it's dark inside the cave, you can see bright daylight outside the cave to the west.",
+  w_to room06,
+  out_to room06,
+  before
+  [;
+    Go:
+      if (selected_direction == w_to or out_to)
+      {
+        self.time_left = 0;
+        StopDaemon(self);
+        rfalse;
+      }
+    Hint:
+      if (DarkHints())
+        rtrue;
+      if (remains in location)
+        "Examine the pirate's remains and take what you find.";
+      if (parchment in nothing)
+        "Be patient. If the water level rises, you'll be able to reach that ceiling.";
+  ],
+  daemon
+  [ x y;
+    self.time_left++;
+    if (self.time_left < 6)
+      rtrue;
+    if (self.time_left < 10)
+      "^Sea water is seeping into the cave and its level increases by the minute.";
+    if (self.time_left == 10)
+      "^The water level in the cave is now so high that you're forced to swim.";
+    self.time_left = 0;
+    StopDaemon(self);
+    x = child(self);
+    while (x)
+    {
+      y = sibling(x);!Save for next loop
+      if (x has buoyant)
+        move x to room17;
+      x = y;
+    }
+    StartDaemon(room17);
+    print "^There's a sudden rush of water and you struggle to stay afloat. Within moments, the water raises you to the domed ceiling of the cave and you can't get to the exit.^^";
+    PlayerTo(room17);
+    rtrue;
+  ],
+  time_left 0,
+has;
+
+!----------------------------------------
+! Pools of sea water
+!----------------------------------------
+Object "pools of sea water" room16
+with
+  name 'pool' 'pools' 'of' 'sea' 'water',
+  description "The pools contain sea water.",
+  before
+  [;
+    Drink:
+      print_ret (string)TOO_SALTY;
+    Enter:
+      "In a move reminiscent of your childhood, you paddle about in the small pools of sea water.";
+  ],
+has pluralname scenery;
+
+!----------------------------------------
+! Ceiling
+!----------------------------------------
+Object "ceiling" room16
+with
+  article THE,
+  name 'domed' 'ceiling' 'dome' 'crack' 'cracks',
+  description "The cracks in the domed ceiling are above your head and out of your reach.",
+has scenery;
+
+!----------------------------------------
+! Remains of a pirate
+!----------------------------------------
+Object remains "remains of a pirate" room16
+with
+  article THE,
+  name 'skeleton' 'remains' 'of' 'pirate' 'bones',
+  description "It's nothing more than a skeleton wearing pirate's clothes.",
+  before
+  [;
+    Take:
+      "Ooh, gross! You can take his clothing, but leave the rest to rot in peace.";
+  ],
+has static;
+
+!----------------------------------------
+! Pirate's clothes
+!----------------------------------------
+Object clothes "pirate's clothes" room16
+with
+  name 'pirate^s' 'clothes' 'clothing' 'linen' 'shirt' 'blue' 'frock' 'coat' 'grey' 'gray' 'breeches' 'old' 'tatty',
+  description "The pirate's clothes are extremely old and tatty. They consist of a linen shirt, blue frock coat and grey breeches.",
+  before
+  [;
+    Take:
+      if (children(player) < MAX_CARRIED && self has concealed)
+      {
+        give self ~concealed;
+        remove remains;
+        move skeleton to location;
+      }
+    Wear:
+      if (room20 hasnt visited)
+        "Are you planning on going to a fancy-dress party? You have no reason to wear a dead pirate's clothes.";
+  ],
+  after
+  [;
+    Drop:
+      "You drop", (string)ALL_PIRATES_CLOTHES;
+    Remove:
+      "You remove", (string)ALL_PIRATES_CLOTHES, " You now look like yourself again.";
+    Take:
+      "You take", (string)ALL_PIRATES_CLOTHES;
+    Wear:
+      "You put on the shirt, then the breeches, then the coat. You now look like a pirate. ~Arrr! Shiver me timbers. Now where'd I put me treasure?~";
+  ],
+has clothing concealed pluralname;
+
+!----------------------------------------
+! Skeleton
+!----------------------------------------
+Object skeleton "skeleton"
+with
+  name 'skeleton' 'remains' 'of' 'pirate' 'bones',
+  description "You can't tell now that his clothes have been removed, but this is the remains of a pirate.",
+  before
+  [;
+    Take:
+      "Leave him alone and show a little respect for the dead.";
+  ],
+has static;
+
+!========================================
+! Room 17: Near Ceiling of Cave
+!========================================
+Object room17 "Near Ceiling of Cave"
+with
+  description "The water level has raised due to a sudden ocean swell and this has lifted you until you're almost touching the ceiling of the cave. You're madly kicking your legs to stay afloat while struggling to hold the lantern above the water, but if the water rises any further, you will certainly drown, as you can no longer get to the exit. However, if you're patient, the water level will most likely drop when the swell abates.",
+  d_to "Be patient, the water will recede when the ocean swell lowers.",
+  before
+  [;
+    Dive:
+      <<Go FAKE_D_OBJ>>;
+    Hint:
+      if (DarkHints())
+        rtrue;
+      if (parchment in nothing)
+        "Have you examined the ceiling? Try reaching into the cavity.";
+      "Be patient. What goes up must come down, even water.";
+  ],
+  daemon
+  [ x y;
+    self.time_left++;
+    if (self.time_left < 5)
+      rtrue;
+    if (self.time_left < 6)
+      "^The water is starting to recede.";
+    self.time_left = 0;
+    StopDaemon(self);
+    x = child(self);
+    while (x)
+    {
+      y = sibling(x);!Save for next loop
+      if (x has buoyant)
+        move x to room16;
+      x = y;
+    }
+    StartDaemon(room16);
+    print "^The water level suddenly drops and you once again find yourself standing on the bottom of the cave.^^";
+    PlayerTo(room16);
+    rtrue;
+  ],
+  time_left 0,
+has water;
+
+!----------------------------------------
+! Ceiling
+!----------------------------------------
+Object "rocky ceiling" room17
+with
+  name 'domed' 'rock' 'rocky' 'ceiling' 'of' 'cave',
+  description "When you examine the rocky ceiling, you discover a narrow cavity that extends lengthwise towards the back of the cave. Flotsam and jetsam could easily get stuck in there when the tide is high.",
+has scenery;
+
+!----------------------------------------
+! Cavity
+!----------------------------------------
+Object "cavity" room17
+with
+  name 'cavity' 'deep' 'crack' 'narrow',
+  description
+  [;
+    if (parchment in nothing)
+      "You can see something in the cavity, but you can't see what it is in the dim light.";
+    else
+      "It's just a deep crack in the ceiling.";
+  ],
+  before
+  [;
+    ReachIn, Search:
+      print "You reach into the cavity of the ceiling";
+      if (parchment notin nothing)
+        ", but don't find anything else.";
+      move parchment to location;
+      " and a parchment falls out.";
+  ],
+has scenery;
+
+!----------------------------------------
+! Sea water
+!----------------------------------------
+Object "sea water" room17
+with
+  article THE,
+  name 'sea' 'water',
+  description "The sea water is swirling all around you. You just hope that it doesn't get any higher.",
+  react_after
+  [;
+    Drop:
+      print (The)noun;
+      if (noun has buoyant)
+      {
+        print " float";
+        if (noun hasnt pluralname)
+          print "s";
+        " on the water.";
+      }
+      move noun to room16;
+      print " sink";
+      if (noun hasnt pluralname)
+        print "s";
+      " below the water.";
+  ],
+  before
+  [;
+    Drink:
+      print_ret (string)TOO_SALTY;
+  ],
+has scenery;
+
+!----------------------------------------
+! Goat-skin parchment
+!----------------------------------------
+Object parchment "goat-skin parchment"
+with
+  parse_name
+  [ nw i flag;
+    nw = NextWord();
+    while (nw == 'parchment' or 'goat-skin' or 'goat' or 'skin' or 'soggy' or 'treasure' or 'map')
+    {
+      i++;
+      if (nw == 'treasure' && TestScope(treasure))
+        flag++;
+      nw = NextWord();
+    }
+    if (i == flag)
+      return 0;
+    return i;
+  ],
+  description
+  [;
+    print "It looks like a soggy treasure map. There's something written on it";
+    if (self hasnt general)
+      print ", so perhaps you should read it";
+    ".";
+  ],
+  before
+  [;
+    Read:
+      give self general;
+      "On closer examination, it looks like a map of the island. There's an 'X' marked to the east of the island and some blurry writing that says, 'WITH IT YOU WILL FIND WEALTH. WITHOUT IT YOU WILL FIND DEATH.' That's pretty cryptic.";
+  ],
+has buoyant;
+
+!========================================
+! Room 18: Thick Vegetation
+!========================================
+Object room18 "Thick Vegetation"
+with
+  description "The vegetation is almost impenetrable at this point, but it thins out to the south and east.",
+  s_to room10,
+  e_to room19,
+has light;
+
+!========================================
+! Room 19: Outside Dark Cave
+!========================================
+Object room19 "Outside Dark Cave"
+with
+  description "You're in front of a dark cave to the north. It's well hidden by the thick vegetation and you probably wouldn't have noticed it if not for the faint trail that comes from the west, then disappears into the cave.",
+  n_to room20,
+  w_to room18,
+  in_to room20,
+  before
+  [;
+    Hint:
+      if (room20 hasnt visited)
+        print_ret (string)ENTER_CAVE;
+  ],
+has light;
+
+!----------------------------------------
+! Trail
+!----------------------------------------
+Object "trail" room19
+with
+  name 'trail' 'faint',
+  description "It comes from the west, then leads into the dark cave to the north.",
+has scenery;
+
+!----------------------------------------
+! Vegetation (floating object)
+!----------------------------------------
+Object "vegetation"
+with
+  article THE,
+  name 'vegetation' 'thick' 'leafy' 'vine' 'vines',
+  description "The vegetation is mainly leafy vines hanging over the entrance to the cave.",
+  found_in room19 room20,
+has scenery;
+
+!----------------------------------------
+! Dark cave (floating object)
+!----------------------------------------
+Object "dark cave"
+with
+  name 'cave' 'entrance' 'small' 'dark' 'primitive' 'shelter',
+  description
+  [;
+    print "It's a dark cave";
+    if (self in room19)
+      ", but you can't tell much more than that without going inside.";
+    else
+      " with a packed-earth floor. It's actually quite cosy and makes a good shelter from the elements outside.";
+  ],
+  before
+  [;
+    Enter:
+      if (self in room19)
+        <<Go FAKE_N_OBJ>>;
+    Exit:
+      if (self in room20)
+        <<Go FAKE_S_OBJ>>;
+  ],
+  found_in room19 room20,
+has scenery;
+
+!========================================
+! Room 20: Inside Dark Cave
+!========================================
+Object room20 "Inside Dark Cave"
+with
+  name 'small' 'cave',
+  description "The small cave is clearly a primitive shelter. A straw mattress in one corner betrays a human presence and the remains of a firepit confirm that. A faint light can be seen beyond the thick vegetation that hides the entrance to the south.",
+  s_to room19,
+  out_to room19,
+  before
+  [;
+    Hint:
+      if (DarkHints())
+        rtrue;
+      if (castaway in self)
+      {
+        print "Ask the castaway about his belongings, the things you're looking for and anything else he mentions. ";
+        if (clothes has concealed)
+          "Come back when you've found something he's scared of.";
+        else
+          "Then it's time to play dress-ups.";
+      }
+  ],
+has;
+
+!----------------------------------------
+! Packed-earth floor
+!----------------------------------------
+Object "packed-earth floor" room20
+with
+  name 'packed-earth' 'packed' 'earth' 'soil' 'dirt' 'floor' 'ground',
+  description "The soil in the cave is packed solid from years of use.",
+  before
+  [;
+    Dig:
+      "You can't dig it with your bare hands. You'd need a spade or a shovel.";
+  ],
+has scenery;
+
+!----------------------------------------
+! Straw mattress
+!----------------------------------------
+Object "straw mattress" room20
+with
+  name 'thin' 'straw' 'mattress',
+  description "It's a thin straw mattress that doesn't look very comfortable.",
+  before
+  [;
+    Enter, Take:
+      "You'd prefer to sleep on the comfy bunk back on your yacht.";
+    LookUnder:
+      "There's nothing under the mattress apart from the packed-earth floor.";
+  ],
+has scenery;
+
+!----------------------------------------
+! Firepit
+!----------------------------------------
+Object "firepit" room20
+with
+  name 'remains' 'of' 'firepit' 'fireplace' 'fire' 'pit' 'ash' 'ashes',
+  description "The ashes in the firepit are cold.",
+  before
+  [;
+    Dig, Search:
+      "Sorry to disappoint you, but there's nothing apart from ashes.";
+  ],
+has scenery;
+
+!----------------------------------------
+! Faint light
+!----------------------------------------
+Object "faint light" room20
+with
+  name 'faint' 'light' 'daylight' 'entrance',
+  description "A faint light shines in from the south.",
+has scenery;
+
+!----------------------------------------
+! Bearded man
+!----------------------------------------
+Object castaway "bearded man" room20
+with
+  name 'man' 'castaway' 'strange' 'bearded' 'individual' 'dirty' 'smelly' 'hermit',
+  description "He's a strange, bearded individual dressed in rags that are both dirty and smelly. He looks like a castaway.",
+  life
+  [;
+    Ask:
+      wn = consult_from;
+      switch (NextWord())
+      {
+        'castaway':
+          "~Are ya talkin' about me? I ain't a castaway. I just like a bit of seclusion.~";
+        'fire', 'firepit', 'fireplace', 'pit':
+          "~I have to light a fire at night to keep them pirate ghosts away.~";
+        'flippers':
+          "~They're mine. Get your own.~ You sincerely doubt that your flippers will fit his small feet, but he might not realise that yet, as he probably hasn't tried them on.";
+        'ghost', 'ghosts':
+          "~If ya don't light a fire at night, them pirate ghosts come and haunt ya. They're right creepy. They'll scare the bejesus outta ya.~";
+        'him', 'himself':
+          "~None of your business.~";
+        'knife':
+          "~It's mine. I need it to scare off them pirate ghosts.~";
+        'me', 'myself', 'self':
+          "~Never seen ya before in me life.~";
+        'pirate', 'pirates':
+          "~Ain't no pirates 'round 'ere. Only dead ones...and their ghosts.~";
+        'scuba', 'gear':
+          "~It's mine. Get your own.~ Now you know damn well that he's lying, as that's your stolen scuba gear.";
+        'ship', 'shipwreck', 'wreck':
+          "~I ain't seen no shipwrecks.~ If he hasn't found any shipwrecks, then why does he need your scuba gear?";
+        'treasure':
+          "~I don't know nothin' about no treasure.~ Hmm, he looked a bit sheepish when he said that. You think he must know something, but he's not letting on.";
+        default:
+          "~I don't know nothin' about that.~ This castaway is certainly not very friendly.";
+      }
+    Attack:
+      "He might not be very friendly, but he's done you no harm, so leave him alone.";
+    Give:
+      if (noun == parchment or glasses)
+        print "I don't think you should give ", (ThatOrThose)second, "  away. You might need ";
+      if (noun == parchment)
+        "it. Maybe you could show it to him to see if you get a reaction.";
+      if (noun == glasses)
+        "them again if the lantern goes out.";
+      "~If it ain't rum, I ain't interested.~";
+    Show:
+      if (noun == parchment)
+        "He squints. ~Where'd ya get that? I've been lookin' for...er...looks like rubbish. I'll take it off your hands if ya don't want it.~";
+      "~I'm not interested in your trinkets.~ He didn't look very carefully. You don't think he can see very well without his glasses.";
+    Talk:
+      "~Who are you?~ You explain that your name is Alan Simmons, but you think it best not to mention your objective on the island.";
+  ],
+  before
+  [;
+    AskFor:
+      if (second == knife or scuba or flippers or rags)
+      {
+        if (second hasnt pluralname)
+          print "~This is";
+        else
+          print "~These are";
+        " mine. Get your own.~";
+      }
+      "~I ain't got none.~";
+    Smell:
+      "Phew! He smells of dirt and grime and really bad body odour.";
+  ],
+  !The parser converts ASK CREATURE FOR NOUN into CREATURE, GIVE NOUN TO ME.
+  !This is a hack to convert it back again.
+  orders
+  [;
+    Give:
+      <<AskFor self noun>>;
+  ],
+  each_turn
+  [;
+    if (clothes has worn)
+    {
+      remove self;
+      "^The castaway is unexpectedly frightened by your appearance, as if he's seen a ghost. He carefully edges around you, then leaves the cave and runs away into the vegetation.";
+    }
+  ],
+has animate transparent;
+
+!----------------------------------------
+! Beard
+!----------------------------------------
+Object "beard" castaway
+with
+  name 'beard' 'long' 'scraggly',
+  description "It's long and scraggly.",
+has static;
+
+!----------------------------------------
+! Rags
+!----------------------------------------
+Object rags "rags" castaway
+with
+  name 'rags',
+  description "You've seen cleaning rags in better condition than this man's rags.",
+has pluralname static;
+
+!----------------------------------------
+! Knife
+!----------------------------------------
+Object knife "knife" castaway
+with
+  name 'diver^s' 'knife',
+  description "It looks like a diver's knife. Perhaps the castaway is a diver? Or was expecting to be diving for treasure?",
+has static;
+
+!----------------------------------------
+! Scuba gear
+!----------------------------------------
+Object scuba "scuba gear" room20
+with
+  article "your",
+  name 'scuba' 'gear' 'oxygen' 'tank' 'respirator' 'mask',
+  description "It's your scuba gear. It consists of an oxygen tank, respirator and mask.",
+  before
+  [;
+    Disrobe:
+      if (location == room24 or room25)
+        "You can't remove the scuba gear while you're underwater, or you'll drown.";
+    Take:
+      if (castaway in location)
+        print_ret (string)CASTAWAY_DRAWS_KNIFE, "points it towards your heart. ~Hands off me stuff or I'll do ya through.~";
+  ],
+has clothing;
+
+!----------------------------------------
+! Flippers
+!----------------------------------------
+Object flippers "flippers" room20
+with
+  article "a pair of",
+  name 'pair' 'of' 'flippers',
+  description "They're your flippers.",
+  react_before
+  [ destination;
+    Go:
+      if (self hasnt worn)
+        rfalse;
+      if (location has water)
+        rfalse;
+      destination = location.(direction_properties_array->selected_direction_index);
+      if (destination ofclass Object && destination hasnt door && destination hasnt water)
+        "It's too awkward to walk around wearing flippers.";
+      rfalse;
+  ],
+  before
+  [;
+    Disrobe:
+      if (location == room24 or room25)
+        "You can't remove the flippers while you're underwater, or you won't be able to swim against the strong ocean currents.";
+    Take:
+      if (castaway in location)
+        print_ret (string)CASTAWAY_DRAWS_KNIFE, "waves it in a threatening manner. ~Get ya own flippers or I'll turn ya into mince meat.~";
+  ],
+has buoyant clothing pluralname;
+
+!========================================
+! Room 21: Top of Cliff
+!========================================
+Object room21 "Top of Cliff"
+with
+  description "You're at the top of a hill on the east side of the island. The rocky peak reveals an impressive view over the ocean. There's a cliff to the east that looks down into the deep sea. There doesn't appear to be any rocks at the base of the cliff, as the ocean waves crash directly against the cliff wall many metres below. Unless you're silly enough to jump off the cliff, you can only go back down the steep slope of the hill that brought you here.",
+  e_to
+  [;
+    if (parchment hasnt general)
+      "You have no reason to make a death-defying leap into the ocean. Maybe later?";
+    if (lantern in player)
+      print_ret (string)LEAVE_LANTERN_BEHIND;
+    print "The 'X' on the map was on this side of the island and this is the only way to get there. So, here goes nothing...^^";
+    return room22;
+  ],
+  d_to room12,
+  before
+  [;
+    Dive, Jump, Swim:
+      <<Go FAKE_E_OBJ>>;
+    Hint:
+      if (parchment hasnt general)
+        "You'll need a good reason to dive off that cliff. Knowing the location of the shipwreck would be a good reason.";
+      if (scuba notin player || flippers notin player)
+        "It's preferable to have your diving gear before you dive into the ocean.";
+  ],
+has light;
+
+!----------------------------------------
+! Cliff (floating object)
+!----------------------------------------
+Object "cliff"
+with
+  name 'cliff' 'cliffs' 'top' 'of' 'very' 'high' 'sheer' 'tall',
+  description "It's a sheer cliff with very little in the way of hand-holds or foot-holds, so there's no way you'll be able to climb it.",
+  before
+  [;
+    Climb:
+      print_ret (string)TOO_STEEP_TO_CLIMB;
+    Exit:
+      if (self in room21)
+        <<Jump>>;
+  ],
+  found_in room21 room22 room23,
+has scenery;
+
+!----------------------------------------
+! Impressive view
+!----------------------------------------
+Object "view" room21
+with
+  article THE,
+  name 'impressive' 'view',
+  description "There's ocean as far as the eye can see.",
+has scenery;
+
+!----------------------------------------
+! Ocean on east side of island (floating object)
+!----------------------------------------
+Object "ocean"
+with
+  article THE,
+  name 'ocean' 'sea' 'water',
+  description "The ocean on this side of the island is dark blue due to the depth of the water and the rocky sea bed.",
+  react_before
+  [;
+    Drop:
+      if (self in room23 or room25)
+        "Not here or it will get lost in the ocean.";
+  ],
+  before
+  [;
+    Drink:
+      print_ret (string)TOO_SALTY;
+  ],
+  react_after
+  [;
+    Drop:
+      if (self in room22)
+      {
+        print (The)noun;
+        if (noun has buoyant)
+        {
+          print " float";
+          if (noun hasnt pluralname)
+            print "s";
+          " on the water.";
+        }
+        move noun to room24;
+        print " sink";
+        if (noun hasnt pluralname)
+          print "s";
+        " below the water.";
+      }
+      if (self in room24)
+      {
+        print (The)noun;
+        if (noun hasnt buoyant)
+        {
+          print " sink";
+          if (noun hasnt pluralname)
+            print "s";
+          " to the bottom.";
+        }
+        move noun to room22;
+        print " float";
+        if (noun hasnt pluralname)
+          print "s";
+        " to the surface.";
+      }
+  ],
+  found_in room21 room22 room23 room24 room25,
+has scenery;
+
+!========================================
+! Room 22: Ocean at Foot of Cliff
+!========================================
+Object room22 "Ocean at Foot of Cliff"
+with
+  description "You're in the ocean at the foot of a high cliff at the east side of the island. The water is very deep here. You can't climb the cliff and the ocean currents are too strong to swim south or east, but you can swim around the island to the north.",
+  n_to room23,
+  w_to STEEP_CLIFF_PREVENTS_YOU,
+  d_to
+  [;
+    if (scuba hasnt worn || flippers hasnt worn)
+      print_ret (string)NEED_TO_WEAR_DIVING_GEAR;
+    return room24;
+  ],
+  before
+  [;
+    Dive:
+      <<Go FAKE_D_OBJ>>;
+    Hint:
+      if (room20 hasnt visited)
+        "Find your stolen diving gear.";
+      if (scuba hasnt worn || flippers hasnt worn)
+        print_ret (string)NEED_TO_WEAR_DIVING_GEAR;
+      if (room24 hasnt visited)
+        "Dive, dive, dive.";
+    Swim:
+      <<Go FAKE_N_OBJ>>;
+  ],
+has light water;
+
+!----------------------------------------
+! Coast (east and north of island) (floating object)
+!----------------------------------------
+Object "coast"
+with
+  article THE,
+  name 'coast' 'shore' 'shoreline',
+  description "The coast is lined by a tall cliff, so there's no way to get ashore.",
+  found_in room22 room23,
+has scenery;
+
+!========================================
+! Room 23: Ocean North of Island
+!========================================
+Object room23 "Ocean North of Island"
+with
+  description "You find yourself in the sea water at the north end of the island. There's only a steep cliff along the shoreline to your south and never-ending ocean to the north. Your best bet is to swim around the shoreline to the east or west.",
+  n_to "That direction will only take you into deeper ocean waters.",
+  s_to STEEP_CLIFF_PREVENTS_YOU,
+  e_to room22,
+  w_to
+  [;
+    print "The strong current drags you around to the west side of the island, where the large waves wash you ashore...^^";
+    return room09;
+  ],
+  d_to "The ocean currents are too strong to go diving here.",
+  before
+  [;
+    Dive:
+      <<Go FAKE_D_OBJ>>;
+    Swim:
+      "Which direction?";
+  ],
+has light water;
+
+!========================================
+! Room 24: Deep Below Water
+!========================================
+Object room24 "Deep Below Water"
+with
+  description "You've descended to a considerable depth where you can see the enormous hulk of an ancient wreck resting on the rocky sea bed. Flashes of sunlight create a mesmerising light show on the surface of the water many metres above your head.",
+  u_to room22,
+  d_to "You can't go any deeper.",
+  in_to room25,
+  before
+  [;
+    Dive:
+      <<Go FAKE_D_OBJ>>;
+    Hint:
+      if (room25 hasnt visited)
+        "Enter the wreck.";
+    Swim:
+      <<Go FAKE_IN_OBJ>>;
+  ],
+has light water;
+
+!----------------------------------------
+! Shipwreck (floating object)
+!----------------------------------------
+Object "shipwreck"
+with
+  name 'shipwreck' 'ship' 'wreck' 'enormous' 'carcass' 'hulk' 'ancient' 'galleon' 'long' 'wooden' 'structures' 'boat',
+  description "This is undoubtedly the wreck you've been looking for.",
+  before
+  [;
+    Enter:
+      if (self in room24)
+        <<Go FAKE_IN_OBJ>>;
+    Exit:
+      if (self in room25)
+        <<Go FAKE_OUT_OBJ>>;
+  ],
+  found_in room24 room25,
+has scenery;
+
+!----------------------------------------
+! Sea bed
+!----------------------------------------
+Object "sea bed" room24
+with
+  article THE,
+  name 'rocky' 'sea' 'bed' 'seabed' 'sharp' 'rocks' 'coral' 'seaweed',
+  description "The sea bed is scattered with sharp rocks that have no doubt fallen from the cliff. Everything is covered in coral and seaweed.",
+has scenery;
+
+!----------------------------------------
+! Flashes of sunlight on surface
+!----------------------------------------
+Object "sunlight" room24
+with
+  article THE,
+  name 'flashes' 'of' 'sunlight' 'surface' 'mesmerising' 'light' 'show',
+  description "The word of the day is 'mesmerising' and that's exactly how you would describe the light show on the surface of the water.",
+has scenery;
+
+!========================================
+! Room 25: Shipwreck
+!========================================
+Object room25 "Shipwreck"
+with
+  description "The enormous carcass of the wreck is now around you. The long wooden structures of the galleon are completely covered with marine encrustations and there are numerous fish that flee in fear as you pass.",
+  out_to room24,
+  before
+  [;
+    Hint:
+      "You've come all this way and found what you were looking for, now it's time to take it back home.";
+  ],
+has light water;
+
+!----------------------------------------
+! Encrustations
+!----------------------------------------
+Object "encrustations" room25
+with
+  name 'marine' 'encrustations',
+  description "The encrustations have built up over hundreds of years.",
+has pluralname scenery;
+
+!----------------------------------------
+! Fish
+!----------------------------------------
+Object "fish" room25
+with
+  name 'fish' 'tropical',
+  description "The tropical fish come in all shapes and sizes and some of them are very colourful.",
+has pluralname scenery;
+
+!----------------------------------------
+! Treasure
+!----------------------------------------
+Object treasure "treasure" room25
+with
+  name 'fabulous' 'treasure' 'gold' 'silver' 'coins' 'pearls' 'gems' 'jewellery' 'trinkets',
+  description "It's a fabulous treasure that the pirates must have left behind when their ship sank. It's mostly gold and silver coins, but there's also pearls, gems, jewellery and other trinkets.",
+  before
+  [;
+    Take:
+      deadflag = 2;
+      "There's too much treasure to take it all at once, so you return to your yacht and sail it out of the bay and around the coast and anchor it above the location of the shipwreck. From here, you're able to hoist the treasure aboard.^^After sailing back home and reporting your find to the relevant authorities, you're embroiled in endless red tape. In the end, no one is able to make a legal claim to your treasure and you're able to keep it. Over a period of time, you sell it off to museums and private collectors.^^Your research and trip to the Caribbean has certainly paid dividends. Will you do it again? Only time will tell.";
+  ],
+has;
+
+!========================================
+! Limbo
+!========================================
+Object limbo;
+
+Object dummy_key;
+
+!========================================
+! Printing rules
+!========================================
+[ consultWord word i;
+  for (i=0:i<WordLength(word):i++)
+    print (char)LowerCase(WordAddress(word)->i);
+];
+
+[ DoesntOrDont obj;
+  if (obj has pluralname)
+    print "don't";
+  else
+    print "doesn't";
+];
+
+[ firstConsultWord word i;
+  for (i=0:i<WordLength(word):i++)
+    if (i == 0)
+      print (char)UpperCase(WordAddress(word)->i);
+    else
+      print (char)LowerCase(WordAddress(word)->i);
+];
+
+!========================================
+! Other routines
+!========================================
+[ _UpdateDarkness p_silent _ceil _old_darkness _darkness;
+  if (location == thedark)
+    _old_darkness = true;
+  _ceil = ScopeCeiling(player);
+  if (_LookForLightInObj(_ceil, _ceil) == false)
+    _darkness = true;
+  if (_darkness ~= _old_darkness)
+    scope_modified = true;
+  if (_darkness)
+    location = thedark;
+  else
+    location = real_location;
+  if (_darkness ~= _old_darkness && p_silent == false)
+  {
+    new_line;
+    <Look>;
+  }
+];
+
+[ CantBeLit;
+  if (second == nothing)
+    "And how do you propose to do that?";
+  if (second ~= glasses)
+    "You can't light ", (the)noun, " with ", (the)second, ".";
+  if (location hasnt light || location == room15)
+    "You try focusing the glasses on ", (the)noun, ", but there's not enough light. You need to be in direct sunlight.";
+  rfalse;
+];
+
+[ CantBeTied;
+  if (second == nothing)
+    "You'll have to tell me what to tie it to.";
+  if (noun == rope && second ~= hook)
+    "You can't tie the rope to ", (ThatOrThose)second, ".";
+  if (noun == hook && second ~= rope)
+    "You can't tie the hook to ", (ThatOrThose)second, ".";
+  rfalse;
+];
+
+[ DarkHints;
+  if (location == thedark && lantern hasnt moved)
+    "Missing a light source? There are two dark caves and one light cave. Search the light cave for a light.";
+  if (location == thedark && glasses in nothing)
+    "Can't light the lantern? Search the cabin on your yacht.";
+  if (location == thedark)
+    "Try lighting the lantern in direct sunlight.";
+  rfalse;
+];
+
+[ LowerCase c; ! for ZSCII matching ISO 8859-1
+  switch (c)
+  {
+    'A' to 'Z': c = c + 32;
+    202, 204, 212, 214, 221: c--;
+    217, 218: c = c - 2;
+    158 to 160, 167, 168, 208 to 210: c = c - 3;
+    186 to 190, 196 to 200: c = c - 5 ;
+    175 to 180: c = c - 6;
+  }
+  return c;
+];
+
+[ PlayerDescription;
+  print "Your name is Alan Simmons. You're a spirited and independant young man who has a love of sailing. You're currently searching for a sunken pirate ship while on vacation in the Caribbean.";
+  if (clothes has worn)
+    print " Just to add to the authenticity of the situation, you're currently dressed up as a pirate.";
+  "";
+];
+
+[ UpperCase c; ! for ZSCII matching ISO 8859-1
+  switch (c)
+  {
+    'a' to 'z': c = c - 32;
+    201, 203, 211, 213, 220: c++;
+    215, 216: c = c + 2;
+    155 to 157, 164, 165, 205 to 207: c = c + 3;
+    181 to 185, 191 to 195: c = c + 5 ;
+    169 to 174: c = c + 6;
+  }
+  return c;
+];
+
+!========================================
+! Grammar
+!========================================
+Extend 'ask'
+  * 'about' topic -> AskAbout;
+
+Extend 'blow'
+  * 'on'/'out' noun -> Extinguish
+  * noun 'out' -> Extinguish;
+
+Extend 'climb'
+  * 'up' -> Ascend
+  * 'up' noun -> Ascend
+  * 'down' -> Descend
+  * 'down' noun -> Descend
+  * 'in'/'into'/'on'/'onto'/'through' noun -> Enter
+  * 'off'/'out' noun -> Exit
+  * 'off'/'out' 'of' noun -> Exit;
+
+Extend 'dig'
+  * -> Dig
+  * 'out' noun -> Dig
+  * noun 'out' -> Dig;
+
+Extend only 'dive' replace
+  * -> Dive
+  * 'down' -> Dive;
+
+Extend 'get' first
+  * 'down' -> Descend
+  * 'up' -> Exit;
+
+Extend 'jump'
+  * 'overboard' -> Jump;
+
+Extend 'lock' first
+  * noun -> Lock;
+
+Extend 'look'
+  * 'into' noun -> Search
+  * 'through' noun -> Examine
+  * 'behind'/'under' noun -> LookUnder;
+
+Extend only 'put'
+  * 'out' noun -> Extinguish
+  * noun 'out' -> Extinguish;
+
+Extend 'read' first
+  * noun -> Read;
+
+Extend only 'say' first
+  * topic -> Say;
+
+Extend only 'speak' replace
+  * -> Talk
+  * creature -> Talk
+  * noun -> Talk
+  * 'to'/'with' creature -> Talk
+  * 'to'/'with' noun -> Talk
+  * 'to'/'with' creature 'about' topic -> Ask
+  * 'to'/'with' noun 'about' topic -> Ask;
+
+Extend 'swim'
+  * 'in'/'to' noun -> Swim;
+
+Extend only 'throw'
+  * held 'across'/'over' noun -> ThrowAt;
+
+Extend 'unlock' first
+  * noun -> Unlock;
+
+Verb meta 'about' 'info'
+  * -> About;
+
+Verb 'ascend'
+  * -> Ascend
+  * noun -> Ascend;
+
+Verb 'board' = 'enter';
+
+Verb 'chuck' 'toss' = 'throw';
+
+Verb meta 'credits'
+  * -> Credits;
+
+Verb 'descend'
+  * -> Descend
+  * noun -> Descend;
+
+Verb 'extinguish' 'douse' 'snuff' 'unlight'
+  * noun -> Extinguish;
+
+Verb 'focus' 'aim' 'magnify'
+  * noun 'on'/'onto'/'at' noun -> Burn reverse
+  * 'light'/'sun'/'sunlight' 'at'/'on'/'onto' noun -> VagueBurn
+  * 'light'/'sun'/'sunlight' 'at'/'on'/'onto' noun 'with' noun -> Burn;
+
+Verb meta 'help' 'instructions'
+  * -> Help;
+
+Verb 'hint' 'clue'
+  * -> Hint;
+
+Verb 'inspect' = 'examine';
+
+Verb 'plunge' 'submerge'
+  * -> Dive;
+
+Verb 'reach' 'stretch'
+  * -> Reach
+  * noun -> Reach
+  * 'for' noun -> Reach
+  * 'in'/'into'/'inside' noun -> ReachIn;
+
+Verb 'surface' = 'ascend';
+
+Verb 'talk' 'babble' 'chat' 'communicate' 'converse' 'gab' 'gossip'
+  * -> Talk
+  * creature -> Talk
+  * noun -> Talk
+  * 'to'/'with' creature -> Talk
+  * 'to'/'with' noun -> Talk
+  * 'to'/'with' creature 'about' topic -> Ask
+  * 'to'/'with' noun 'about' topic -> Ask;
+
+Verb 'untie' 'disconnect' 'detach' 'unfasten'
+  * -> Untie
+  * noun -> Untie
+  * noun 'from' noun -> Untie;
+
+Verb 'use'
+  * noun -> Use;
+
+Verb 'xyzzy' 'plover' 'plugh' 'yoho'
+  * -> MagicWord;
+
+!========================================
+! Actions
+!========================================
+[ AboutSub;
+  print "This game is an adaptation of the Italian adventure 'Alan Simmons: Bucaneer' by Bonaventura Di Bello. It was originally written using The Quill and Illustrator and published by Edizioni Hobby S.r.l. on the cover tape of 'Viking', no. 8, September 1987 for the ZX Spectrum and Commodore 64.^^The data was extracted from the C64 version using UnQuill, translated to English and rewritten for a modern audience with the original author's permission. The new version includes many enhancements that weren't in the original. The coding was done using Inform 6 and the PunyInform library.^^";
+  <<Credits>>;
+];
+
+[ AscendSub;
+  <<Go FAKE_U_OBJ>>;
+];
+
+[ AskAboutSub x count npc;
+  objectloop (x in location && x has animate && x ~= player)
+  {
+    count++;
+    npc = x;
+  }
+  if (count == 0)
+    "There's no one here to answer your questions.";
+  if (count == 1)
+    <<Ask npc noun>>;
+  "As there are multiple characters here, you'll have to specify who to ask, e.g. ASK MAN ABOUT DOG.";
+];
+
+[ CreditsSub;
+  "Original concept, game design and coding by Bonaventura Di Bello.^English translation, game redesign and coding by Garry Francis.^Play testing by Adam Faiz, AM Ruf, Charles Moore Jr, Gianluca Girelli, Jade J Aincioa, Pablo Maria Martinez Merino and Robert Eggleston.^Special thanks to Gianluca Girelli for ideas and feedback during the redesign.";
+];
+
+[ DescendSub;
+  <<Go FAKE_D_OBJ>>;
+];
+
+[ DiveSub;
+  if (location hasnt water)
+    "You need to be in the water before you can dive.";
+  "The water here isn't really suitable for diving.";
+];
+
+[ ExtinguishSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "You can't extinguish ", (ThatOrThose)noun, ".";
+];
+
+[ GoSub _prop;
+  if (selected_direction == ne_to or nw_to or se_to or sw_to)
+    "There are no diagonal directions in this game.";
+  _prop = selected_direction;
+#Iftrue RUNTIME_ERRORS > RTE_MINIMUM;
+  if (_prop == 0)
+    return _RunTimeError(ERR_INVALID_DIR_PROP);
+#Endif;
+  return GoDir(_prop);
+];
+
+[ HelpSub;
+  "Tell me what to do using simple commands starting with a verb.^^Use LOOK (or L) to refresh the location description. Identify all the objects in the description and EXAMINE (or X) each one. Read responses carefully for hints.^^Use compass directions (N, S, E, W, U and D) to move around. Draw a map as you go.^^Use GET or TAKE to take objects and DROP to drop them again. Use WEAR to wear things like clothing and REMOVE to remove anything that's currently worn. Use INVENTORY (or I) to see what you're carrying and wearing.^^Use AGAIN (or G) to repeat the last command.^^Use UNDO to undo the last command if you get killed, make a mistake or want to try something different.^^Use SAVE to save the game and RESTORE to restore it again.^^There are over 100 verbs that you can use, so if something doesn't work, try a different verb or a different way of doing things. Use HINT if you get stuck.^^For full instructions, see the game page at <https://bdb-project.itch.io/caribbean-treasure>.";
+];
+
+[ HintSub;
+  "Examine everything you find and draw a map.";
+];
+
+[ LockSub k;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  if (noun hasnt lockable)
+  {
+    PrintMsg(MSG_LOCK_NOT_A_LOCK, 'lock');
+    rtrue;
+  }
+  if (noun has locked)
+  {
+    PrintMsg(MSG_LOCK_ALREADY_LOCKED);
+    rtrue;
+  }
+  if (noun has open)
+  {
+    PrintMsg(MSG_LOCK_CLOSE_FIRST);
+    rtrue;
+  }
+  k = RunRoutines(noun, with_key);
+  if (k == nothing)
+    "You can't see how to lock ", (ItOrThem)noun, ".";
+  if (second == nothing && k ~= nothing && k in player)
+  {
+    second = k;
+    print "(with ", (the)second, ")^";
+  }
+  if (second == nothing)
+    "You don't have the key.";
+  if (second ~= k)
+  {
+    PrintMsg(MSG_LOCK_KEY_DOESNT_FIT);
+    rtrue;
+  }
+  give noun locked;
+  run_after_routines_msg = MSG_LOCK_DEFAULT;
+  run_after_routines_arg_1 = 'lock';
+];
+
+[ LookUnderSub;
+  if (location == thedark)
+    "But it's dark.";
+  "You find nothing of interest.";
+];
+
+[ MagicWordSub;
+  "The ghost of a drunken pirate appears singing,^~Fifteen men on the dead man's chest.^Yo-ho-ho, and a bottle of rum!^Drink and the devil had done for the rest.^Yo-ho-ho, and a bottle of rum!~^^He then fades away. How strange...";
+];
+
+[ ReachInSub;
+  if (noun == nothing)
+    "You'll have to tell me what you want to reach into.";
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  if (noun hasnt container)
+    "You can't reach into ", (the)noun, ", because ", (ThatOrThose)noun, " ", (IsOrAre)noun, " not a container.";
+  if (noun hasnt open)
+    "You can't reach into ", (the)noun, ", because ", (ThatOrThose)noun, " ", (IsOrAre)noun, " not open.";
+  <<Touch noun>>;
+];
+
+[ ReachSub;
+  if (noun == nothing)
+    "You have a good stretch.";
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  <<Touch noun>>;
+];
+
+[ ReadSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "There's nothing legible on ", (ThatOrThose)noun, ".";
+];
+
+[ SaySub i;
+  if (consult_words == 0)
+    "You have nothing to say.";
+  print "~";
+  i = consult_from;
+  print (firstConsultWord)i++;
+  while (i < consult_from + consult_words)
+    print " ", (consultWord)i++;
+  print ".~^^";
+  wn = consult_from;
+  if (consult_words == 1 && NextWord() == 'xyzzy' or 'plover' or 'plugh' or 'yoho')
+    <<MagicWord>>;
+  if (AfterRoutines())
+    rtrue;
+  "Nothing happens.";
+];
+
+[ TalkSub;
+  if (noun == nothing)
+    "You start talking to no one in particular.";
+  if (noun == player)
+    "You start talking to yourself, but it's a one-sided conversation.";
+  if (RunLife(noun, ##Talk))
+    rtrue;
+  print_ret (The)noun, " ", (IsOrAre)noun, " not very talkative.";
+];
+
+[ UnlockSub k;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  if (noun hasnt lockable)
+  {
+    PrintMsg(MSG_UNLOCK_NOT_A_LOCK, 'unlock');
+    rtrue;
+  }
+  if (noun hasnt locked)
+  {
+    PrintMsg(MSG_UNLOCK_ALREADY_UNLOCKED, 'unlock');
+    rtrue;
+  }
+  k = RunRoutines(noun, with_key);
+  if (k == nothing)
+    "You can't see how to unlock ", (ItOrThem)noun, ".";
+  if (second == nothing && k ~= nothing && k in player)
+  {
+    second = k;
+    print "(with ", (the)second, ")^";
+  }
+  if (second == nothing)
+    "You don't have the key.";
+  if (second ~= k)
+  {
+    PrintMsg(MSG_UNLOCK_KEY_DOESNT_FIT);
+    rtrue;
+  }
+  give noun ~locked;
+  run_after_routines_msg = MSG_UNLOCK_DEFAULT;
+  run_after_routines_arg_1 = 'unlock';
+];
+
+[ UntieSub;
+  if (noun == nothing)
+    "What do you want to untie?";
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "You can't untie ", (ThatOrThose)noun, ".";
+];
+
+[ UseSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "You'll have to be more explicit than that.";
+];
+
+[ VagueBurnSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  if (glasses in player)
+    <<Burn noun glasses>>;
+  <<Burn noun>>;
+];
+
+End;

@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<trizbort version="1.5.9.3">
+	<info>
+		<title>Caribbean Treasure</title>
+		<author>Garry Francis</author>
+	</info>
+	<map>
+		<room id="5" name="Thick Vegetation" subtitle="" x="-40" y="-160" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Tropical vegetation</objects>
+		</room>
+		<room id="7" name="Clearing" subtitle="" x="-40" y="-80" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Tropical vegetation|Track|Clearing</objects>
+		</room>
+		<room id="8" name="Bottom of Hill" subtitle="" x="80" y="-80" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Bottom of hill|Steep slope|Insects</objects>
+		</room>
+		<room id="9" name="Steep Slope" subtitle="" x="200" y="-80" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Steep slope|Hill|Stone</objects>
+		</room>
+		<room id="10" name="Tropical Vegetation" subtitle="" x="-40" y="0" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Tropical island|Tropical vegetation</objects>
+		</room>
+		<room id="11" name="Foot of Palisade" subtitle="" x="80" y="0" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Palisade|Rock face|(Rope hanging from palisade)</objects>
+		</room>
+		<room id="12" name="Foot of Rock Face" subtitle="" x="200" y="0" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Palisade|(Rope hanging from palisade)|Rock face|Small cave</objects>
+		</room>
+		<room id="13" name="Shipwreck" subtitle="" x="440" y="80" w="80" h="40" region="Water" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Ocean|Shipwreck|Encrustations|Fish|Treasure</objects>
+		</room>
+		<room id="15" name="Inside Small Cave" subtitle="" x="320" y="0" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Small cave|Sunlight|Large chest|Brass bands|(Rusty padlock)|(Old lantern)</objects>
+		</room>
+		<line id="31">
+			<dock index="0" id="5" port="s" />
+			<dock index="1" id="7" port="n" />
+		</line>
+		<line id="32">
+			<dock index="0" id="7" port="s" />
+			<dock index="1" id="10" port="n" />
+		</line>
+		<line id="33">
+			<dock index="0" id="8" port="ese" />
+			<dock index="1" id="9" port="wsw" />
+		</line>
+		<line id="34">
+			<dock index="0" id="10" port="e" />
+			<dock index="1" id="11" port="w" />
+		</line>
+		<room id="92" name="Caribbean Treasure (Garry Francis)" subtitle="" x="-300" y="-380" w="820" h="40" region="NoRegion" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="None" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw" />
+		</room>
+		<room id="40" name="Inside Dark Cave" subtitle="" x="80" y="-240" w="80" h="40" region="Dark" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Vegetation|Dark cave|Packed-earth floor|Straw mattress|Firepit|Bearded man|Beard|Rags|Knife|Scuba gear|Pair of flippers</objects>
+		</room>
+		<room id="42" name="Ocean North of Island" subtitle="" x="120" y="-320" w="80" h="40" region="Water" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Cliff|Ocean|Coast</objects>
+		</room>
+		<room id="44" name="Outside Dark Cave" subtitle="" x="80" y="-160" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Trail|Vegetation|Dark cave</objects>
+		</room>
+		<room id="49" name="Top of Cliff" subtitle="" x="320" y="-80" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Steep slope|Hill|Cliff|View|Ocean</objects>
+		</room>
+		<room id="56" name="Ocean at Foot of Cliff" subtitle="" x="440" y="-80" w="80" h="40" region="Water" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Cliff|Ocean|Coast</objects>
+		</room>
+		<room id="60" name="Deep Below Water" subtitle="" x="440" y="0" w="80" h="40" region="Water" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Ocean|Shipwreck|Sea bed|Sunlight</objects>
+		</room>
+		<room id="65" name="Ocean Beach" subtitle="" x="-160" y="-80" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Sand|Beach|Tropical island|Horizon|Tropical vegetation|Track|Ocean</objects>
+		</room>
+		<room id="67" name="Deck of Yacht" subtitle="" x="-300" y="80" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Tropical beach|Bay|Coast|Tropical island|Headland|Horizon|Yacht|Ocean|Deck|Seagull poop|Steps</objects>
+		</room>
+		<room id="68" name="Bay West of Island" subtitle="" x="-160" y="80" w="80" h="40" region="Water" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Tropical beach|Bay|Coast|Tropical island|Headland|Horizon|Yacht|Ocean|Hull</objects>
+		</room>
+		<room id="69" name="Tropical Beach" subtitle="" x="-40" y="80" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" isDark="yes" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Tropical beach|Sand|Bay|Coast|Tropical island|Headland|Horizon|Yacht|Ocean|Footprints|Tropical vegetation|Cliff</objects>
+		</room>
+		<room id="71" name="Cabin of Yacht" subtitle="" x="-300" y="160" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Yacht|Steps|Cabin|(Pair of glasses)</objects>
+		</room>
+		<room id="73" name="Jagged Rocks" subtitle="" x="-40" y="160" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Tropical beach|Sand|Cliff|Jagged rocks|South coast|Ocean|Wooden plank|(Metal hook)</objects>
+		</room>
+		<room id="74" name="Foot of Cliff" subtitle="" x="80" y="160" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Sand|Tropical island|Cliff|Jagged rocks|South coast|Outcrop of rock|Sea cave|High-tide mark|Ocean|Old anchor|(Rope)|(Rope with a hook attached)|</objects>
+		</room>
+		<room id="80" name="Inside Sea Cave" subtitle="" x="200" y="160" w="80" h="40" region="Dark" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Sand|Sea cave|High-tide mark|Pools of sea water|Ceiling|Daylight|Remains of a pirate|(Pirate's clothes)|(Skeleton)</objects>
+		</room>
+		<line id="103">
+			<dock index="0" id="5" port="e" />
+			<dock index="1" id="44" port="w" />
+		</line>
+		<line id="105" style="dashed" flow="oneWay" startText="JUMP">
+			<dock index="0" id="49" port="e" />
+			<dock index="1" id="56" port="w" />
+		</line>
+		<line id="109">
+			<dock index="0" id="7" port="e" />
+			<dock index="1" id="8" port="w" />
+		</line>
+		<line id="114">
+			<dock index="0" id="20" port="e" />
+			<dock index="1" id="10" port="w" />
+		</line>
+		<line id="115" style="dashed" startText="U" endText="U">
+			<dock index="0" id="11" port="e" />
+			<dock index="1" id="12" port="w" />
+		</line>
+		<line id="118" startText="JUMP" endText="U">
+			<dock index="0" id="67" port="e" />
+			<dock index="1" id="68" port="w" />
+		</line>
+		<line id="119">
+			<dock index="0" id="68" port="e" />
+			<dock index="1" id="69" port="w" />
+		</line>
+		<line id="137">
+			<dock index="0" id="10" port="s" />
+			<dock index="1" id="69" port="n" />
+		</line>
+		<line id="138">
+			<dock index="0" id="69" port="s" />
+			<dock index="1" id="73" port="n" />
+		</line>
+		<line id="139">
+			<dock index="0" id="40" port="s" />
+			<dock index="1" id="44" port="n" />
+		</line>
+		<line id="143" startText="U" endText="D">
+			<dock index="0" id="9" port="e" />
+			<dock index="1" id="49" port="w" />
+		</line>
+		<line id="145">
+			<dock index="0" id="42" port="e" />
+			<point index="1" x="480" y="-300" />
+		</line>
+		<line id="146" style="dashed" startText="D" endText="U">
+			<dock index="0" id="56" port="s" />
+			<dock index="1" id="60" port="n" />
+		</line>
+		<line id="147" style="dashed" startText="IN" endText="OUT">
+			<dock index="0" id="60" port="s" />
+			<dock index="1" id="13" port="n" />
+		</line>
+		<line id="179">
+			<dock index="0" id="73" port="e" />
+			<dock index="1" id="74" port="w" />
+		</line>
+		<room id="195" name="Near Ceiling of Cave" subtitle="" x="200" y="80" w="80" h="40" region="Dark" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="#80FFFF" secondFillLocation="BottomRight" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Ceiling|Cavity|Sea water|(Goat-skin parchment)</objects>
+		</room>
+		<line id="244" style="dashed" startText="WAIT" endText="WAIT">
+			<dock index="0" id="80" port="n" />
+			<dock index="1" id="195" port="s" />
+		</line>
+		<room id="231" name="Copyright © Garry Francis 2025" subtitle="" x="340" y="160" w="180" h="40" region="NoRegion" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="None" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw" />
+		</room>
+		<room id="232" name="Legend" subtitle="" x="-300" y="-340" w="80" h="40" region="NoRegion" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="None" description="" roomFill="#FFFFFF" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw" />
+		</room>
+		<room id="240" name="Start Room" subtitle="" x="-300" y="-300" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" isDark="yes" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw" />
+		</room>
+		<room id="241" name="Normal Room" subtitle="" x="-300" y="-240" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw" />
+		</room>
+		<room id="286" name="Dark Room" subtitle="" x="-300" y="-180" w="80" h="40" region="Dark" handDrawn="no" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw" />
+		</room>
+		<line id="1" startText="U" endText="D">
+			<dock index="0" id="8" port="ene" />
+			<dock index="1" id="9" port="wnw" />
+		</line>
+		<line id="2" flow="oneWay">
+			<dock index="0" id="42" port="w" />
+			<point index="1" x="-180" y="-300" />
+		</line>
+		<line id="3" flow="oneWay">
+			<point index="0" x="-180" y="-300" />
+			<dock index="1" id="65" port="w" />
+		</line>
+		<room id="4" name="In Water" subtitle="" x="-300" y="-120" w="80" h="40" region="Water" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw" />
+		</room>
+		<line id="6">
+			<dock index="0" id="7" port="w" />
+			<dock index="1" id="65" port="e" />
+		</line>
+		<line id="16" startText="D" endText="U">
+			<dock index="0" id="67" port="s" />
+			<dock index="1" id="71" port="n" />
+		</line>
+		<line id="17">
+			<dock index="0" id="74" port="e" />
+			<dock index="1" id="80" port="w" />
+		</line>
+		<line id="18">
+			<dock index="0" id="12" port="e" />
+			<dock index="1" id="15" port="w" />
+		</line>
+		<line id="19">
+			<dock index="0" id="56" port="n" />
+			<point index="1" x="480" y="-300" />
+		</line>
+		<line id="14">
+			<dock index="0" id="65" port="s" />
+			<dock index="1" id="20" port="n" />
+		</line>
+		<room id="20" name="Headland" subtitle="" x="-160" y="0" w="80" h="40" region="Normal" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="1" cornerTopRight="1" cornerBottomLeft="1" cornerBottomRight="1" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
+			<objects at="wsw">Bay|Tropical island|Headland|Horizon|Tropical vegetation|Track</objects>
+		</room>
+	</map>
+	<settings>
+		<colors>
+			<canvas>White</canvas>
+			<fill>#FFFF99</fill>
+			<border>Black</border>
+			<line>Black</line>
+			<selectedLine>Gold</selectedLine>
+			<hoverLine>DarkOrange</hoverLine>
+			<largeText>Black</largeText>
+			<smallText>Black</smallText>
+			<lineText>Black</lineText>
+			<grid>#F5F5F5</grid>
+		</colors>
+		<regions>
+			<Dark Name="Dark" TextColor="Black">Silver</Dark>
+			<Dead Name="Dead" TextColor="White">Red</Dead>
+			<NoRegion Name="NoRegion" TextColor="Black">White</NoRegion>
+			<Normal Name="Normal" TextColor="Black">#FFFF80</Normal>
+			<Water Name="Water" TextColor="Black">#80FFFF</Water>
+		</regions>
+		<fonts>
+			<room size="12">Arial</room>
+			<object size="12">Arial Narrow</object>
+			<line size="12">Arial Narrow</line>
+		</fonts>
+		<grid>
+			<snapTo>yes</snapTo>
+			<visible>yes</visible>
+			<showOrigin>yes</showOrigin>
+			<size>20</size>
+		</grid>
+		<lines>
+			<width>1</width>
+			<handDrawn>no</handDrawn>
+			<arrowSize>8</arrowSize>
+			<textOffset>4</textOffset>
+		</lines>
+		<rooms>
+			<darknessStripeSize>10</darknessStripeSize>
+			<objectListOffset>4</objectListOffset>
+			<connectionStalkLength>20</connectionStalkLength>
+			<preferredDistanceBetweenRooms>40</preferredDistanceBetweenRooms>
+			<defaultRoomName>Cave</defaultRoomName>
+		</rooms>
+		<ui>
+			<handleSize>8</handleSize>
+			<snapToElementSize>8</snapToElementSize>
+		</ui>
+		<keypadNavigation>
+			<creationModifier>control</creationModifier>
+			<unexploredModifier>alt</unexploredModifier>
+		</keypadNavigation>
+	</settings>
+</trizbort>
